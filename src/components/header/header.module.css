@@ -1,0 +1,17 @@
+.header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: rgba(241, 248, 252, .3) solid 1px;
+    height: 5rem;
+    background-color: rgba(0,0,0,.3);
+
+}
+
+.items {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}

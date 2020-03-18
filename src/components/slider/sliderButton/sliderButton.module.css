@@ -1,0 +1,14 @@
+.sliderButton {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sliderButtonText{
+    display: inline-block;
+    margin: 0px 5px;
+    letter-spacing: 2px;
+}

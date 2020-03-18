@@ -1,0 +1,38 @@
+.actionButton {
+    border: 1px solid #F6663F;
+    color: white;
+    border-radius: 30px;
+    background: rgb(237,33,81);
+    background: linear-gradient(63deg, rgba(237,33,81,1) 0%, rgba(246,102,63,1) 100%);
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    width: 190px;
+    height: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.actionButton:hover {
+    font-size: 0.8rem;
+}
+
+.actionButtonTransparency {
+    background-color: inherit;
+    border: 2px solid #F6663F;
+    color: white;
+    border-radius: 30px;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    width: 190px;
+    height: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.actionButtonTransparency:hover {
+    font-size: 0.8rem;
+}

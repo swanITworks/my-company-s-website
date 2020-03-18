@@ -1,0 +1,50 @@
+.slider {
+    background-image: url("../../../src/images/slider4.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    margin-right: 10rem;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+    width: 95%;
+}
+
+.hello {
+    color: white;
+    margin: 0px 0px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.mainSlogan {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    margin: 0px 0px;
+}
+
+.slogan {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+}
+
+span {
+    color: #F6663F;
+}
+
