@@ -1,0 +1,13 @@
+.aboutBests {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EBEBEB;
+    padding-top: 4rem;
+}
+
+.aboutBox {
+    margin: 3rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+}

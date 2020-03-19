@@ -1,0 +1,20 @@
+.bestItem {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.number {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bestTitle {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.bestText {
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
