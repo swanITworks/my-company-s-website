@@ -3,7 +3,6 @@ import classes from "./aboutUs.module.css"
 import OurBestItems from "./ourBestItems/ourBestItems"
 
 const aboutUs = () => {
-
   return (
     <section className={classes.aboutUs}>
       <article className={classes.aboutBox}>
