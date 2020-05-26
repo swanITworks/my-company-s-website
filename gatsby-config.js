@@ -32,6 +32,7 @@ module.exports = {
       options: {
         fonts: [
           `Nutiono:300,400,600,700`,
+          `Libre Baskerville:300,400,400i,600,700`,
         ],
         display: 'swap'
       }

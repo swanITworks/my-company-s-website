@@ -13,7 +13,7 @@ const slider = () => {
     <section className={classes.slider}>
       <div className={classes.items}>
         <SliderButton type="prev"/>
-        <article>
+        <article className={classes.main}>
           <h3 className={classes.hello}>Welcome in cutting costs world.</h3>
           <h2 className={classes.mainSlogan}>Grow your<br/><span>Business</span> with us.</h2>
           <h1 className={classes.slogan}>We provide bespoke cloud software for your clients and company.</h1>

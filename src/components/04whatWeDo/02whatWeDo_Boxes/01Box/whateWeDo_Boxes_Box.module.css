@@ -1,0 +1,65 @@
+.whatWeDoBoxes_Box {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bottom {
+    padding: 1rem;
+    text-align: justify;
+    background-color:#ffffff;
+}
+
+.bottomEven {
+    background-color:#171717 !important;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.titleEven {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.info {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: #9FA4AF;
+    margin: 0.5rem 0;
+}
+
+.infoEven {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: #FFFFFF;
+    margin: 0.5rem 0;
+}
+
+.Link {
+    color: #010101;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+
+.Link:hover {
+    border-bottom: 4px #F6663F solid;
+    border-radius: 1px;
+}
+
+.LinkEven {
+    color: #F6663F;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+
+.LinkEven:hover {
+    border-bottom: 4px #F6663F solid;
+    border-radius: 1px;
+}
