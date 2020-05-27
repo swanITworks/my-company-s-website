@@ -1,0 +1,14 @@
+
+.skill {
+    display: flex;
+
+    width: 500px;
+    border: white solid 1px;
+}
+
+.skills{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
