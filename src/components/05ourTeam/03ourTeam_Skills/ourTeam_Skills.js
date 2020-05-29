@@ -1,14 +1,25 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import classes from "./ourTeam_Skills.module.css"
 
-function ourTeam_Skills(props) {
+function OurTeam_Skills(props) {
 
+  const progressValues = props.progressValues;
   const skills = props.skills
-  console.log(skills)
+
 
   const skillsTags = skills.map((item, index) => {
+    const percent = progressValues[index]
     return (
-      <div className={classes.skill}>{Object.keys(item)}{Object.values(item)}</div>
+      <div className={classes.skill}>
+        <div className={classes.description}>
+          <div>{Object.keys(item)}</div>
+          <div>{Object.values(item)}%</div>
+        </div>
+        <div className={classes.progressBar}></div>
+        <div style={{
+          width: percent+'%',
+        }} className={classes.progress}></div>
+      </div>
     )
   })
 
@@ -18,4 +29,4 @@ function ourTeam_Skills(props) {
 }
 
 
-export default ourTeam_Skills
+export default OurTeam_Skills

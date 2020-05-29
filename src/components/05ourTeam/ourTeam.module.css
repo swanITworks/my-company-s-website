@@ -16,22 +16,24 @@
 }
 
 .buttonLeft {
+    cursor: pointer;
     color: #ffffff;
     border-bottom:5px solid #ffffff;
     border-left:5px solid #ffffff;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     margin-right: 2rem;
     transform: rotate(45deg);
     border-radius: 2px;
 }
 
 .buttonRight {
+    cursor: pointer;
     color: #F6663F;
     border-bottom:5px solid #F6663F;
     border-right:5px solid #F6663F;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     margin-left: 2rem;
     transform: rotate(-45deg);
     border-radius: 2px;

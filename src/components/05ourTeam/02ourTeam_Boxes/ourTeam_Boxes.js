@@ -15,9 +15,9 @@ function ourTeam_Boxes(props) {
   return (
     <article className={classes.ourTeamBoxes}>
       <div style={imageStyles}></div>
-      <div className={classes.name}>
-        <p><span className={classes.span}>{person.name}</span></p>
-        <p>{person.title}</p>
+      <div className={classes.nameBox}>
+        <p className={classes.name}><span className={classes.span}>{person.name}</span></p>
+        <p className={classes.title}>{person.title}</p>
       </div>
       <div className={classes.description}>{person.info}</div>
     </article>
