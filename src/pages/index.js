@@ -7,6 +7,7 @@ import OurTeam from "../components/05ourTeam/ourTeam"
 
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Contact from "../components/06contact/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <AboutUs/>
     <WhatWeDo/>
     <OurTeam/>
+    <Contact/>
   </Layout>
 )
 

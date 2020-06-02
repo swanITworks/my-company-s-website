@@ -1,7 +1,7 @@
 import React from "react"
 import classes from "./slider.module.css"
 import SliderButton from "./sliderButton/sliderButton"
-import ActionButton from "./actionButton/actionButton"
+import ActionButton from "../../UI/actionButton/actionButton"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
