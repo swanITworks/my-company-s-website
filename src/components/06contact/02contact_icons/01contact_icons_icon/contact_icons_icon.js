@@ -16,7 +16,7 @@ const Icon = (props) => {
 
   return (
     <div className={classes.iconBox}>
-      <FontAwesomeIcon size='3x' icon={props.icon} className={classes.logo}/>
+      <FontAwesomeIcon size='2x' icon={props.icon} className={classes.logo}/>
       <div className={classes.description}>
         <p className={classes.title}>{props.title}</p>
         <>

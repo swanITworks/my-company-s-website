@@ -1,0 +1,15 @@
+.title {
+    color: #7D7D7D;
+    margin-top: 0.6rem;
+    font-weight: bold;
+}
+
+.items {
+    margin: 2.8rem 0 1.5rem 0;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.items span {
+    margin-left: 1rem;
+}

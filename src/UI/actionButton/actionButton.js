@@ -11,7 +11,7 @@ const ActionButton = (props) => {
   } else if (props.type === "orange") {
     return (
       <button
-        className={classes.orange} type='submit'>{props.text}</button>
+        className={classes.orange} disabled={!props.disabled} type='submit'>{props.text}</button>
     )
   } else {
     return (

@@ -7,31 +7,30 @@
 }
 
 h2.title {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #F6663F;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
 h3.slogan {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     width: 80%;
-    margin: 2rem 0;
+    margin: 1.3rem 0;
 }
 
 h3.slogan span{
-    font-family: 'Libre Baskerville', sans-serif;
-    font-style: italic;
+    font-family: 'Nunito', sans-serif;
     color: #000000;
     font-weight: normal;
 }
 
 p.info {
-    font-size: 1rem;
-    font-family: 'Libre Baskerville', sans-serif;
-    font-style: italic;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     text-align: center;
     color: #9FA4AF;
 }

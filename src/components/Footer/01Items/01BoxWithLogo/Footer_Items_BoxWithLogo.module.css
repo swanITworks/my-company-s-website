@@ -1,0 +1,30 @@
+.Box {
+    width: 25%;
+}
+
+p.info {
+    color: #555555;
+    margin: 3rem 0 1.5rem 0;
+}
+
+p.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p.businessAddressTitle {
+    font-size: 0.7rem;
+    color: #555555;
+}
+
+p.businessAddress{
+    font-size: 0.7rem;
+    color: #9FA4AF;
+}
+
+div.businessPhoneEmail {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+

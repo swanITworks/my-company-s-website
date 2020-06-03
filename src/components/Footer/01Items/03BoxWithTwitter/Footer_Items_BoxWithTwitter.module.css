@@ -1,0 +1,23 @@
+.twitterBox {
+    max-width: 20%;
+}
+
+.title {
+    color: #7D7D7D;
+    margin-top: 0.6rem;
+    font-weight: bold;
+}
+
+.items {
+    color: #555555;
+    font-size: 0.9rem;
+    margin: 2.8rem 0 1.5rem 0;
+}
+
+.twitterTitle {
+    color: white;
+}
+
+.items span {
+    margin-left: 1rem;
+}
