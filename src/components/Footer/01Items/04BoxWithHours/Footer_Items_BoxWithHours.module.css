@@ -1,5 +1,13 @@
 .hoursBox {
-    max-width: 20%;
+    max-width: 15%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    color: #9FA4AF;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
 }
 
 .title {

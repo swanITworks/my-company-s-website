@@ -169,7 +169,9 @@ const Form = () => {
     e.preventDefault()
     console.log(inputElements)
     console.log(isFormValid)
-    setIsFormSent(true)
+    if (isFormValid) {
+      setIsFormSent(true)
+    }
   }
 
   const formElementsArray = []
@@ -201,6 +203,68 @@ const Form = () => {
     )
   )
 
+  const onClickHandler = () =>{
+    setInputElements({
+      ...inputElements,
+      name: {
+        elementType: "input",
+        elementConfig: {
+          type: "text",
+          placeholder: "Your Name",
+        },
+        value: inputElements['name'].value,
+        validation: {
+          required: true,
+          minLength: 2,
+          maxLength: 20,
+        },
+        valid: checkValidation(inputElements['name'].value, inputElements['name'].validation),
+        touched: true,
+      },
+      email: {
+        elementType: "input",
+        elementConfig: {
+          type: "email",
+          placeholder: "Your Email",
+        },
+        value: inputElements['email'].value,
+        validation: {
+          required: true,
+          minLength: 5,
+          maxLength: 320,
+          email: true,
+        },
+        valid: checkValidation(inputElements['email'].value, inputElements['email'].validation),
+        touched: true,
+      },
+      subject: {
+        elementType: "input",
+        elementConfig: {
+          type: "text",
+          placeholder: "Your Subject",
+        },
+        value: "",
+        validation: {
+          required: true,
+        },
+        valid: checkValidation(inputElements['subject'].value, inputElements['subject'].validation),
+        touched: true,
+      },
+      message: {
+        elementType: "textArea",
+        elementConfig: {
+          placeholder: "Your Message",
+        },
+        value: "",
+        validation: {
+          required: true,
+        },
+        valid: checkValidation(inputElements['message'].value, inputElements['message'].validation),
+        touched: true,
+      },
+    })
+  }
+
   const formTextArea = (
     formElementsArray.map(element => {
         if (element.config.elementType === "textArea")
@@ -229,7 +293,7 @@ const Form = () => {
       <div className={classes.formInputs}>
         {formTextArea}
       </div>
-      <ActionButton disabled={isFormValid} type={"orange"} text={"SEND TO US"}/>
+      <ActionButton onClick={onClickHandler} type={"orange"} text={"SEND TO US"}/>
     </form>
   )
 
@@ -237,7 +301,7 @@ const Form = () => {
 
     <div className={classes.successMessage}>
       <p>Your message was sent</p>
-      <p style={{marginTop: '2rem'}}>We will answer in 24h</p>
+      <p style={{ marginTop: "2rem" }}>We will answer in 24h</p>
     </div>
   )
 

@@ -1,0 +1,70 @@
+.subscribeBox {
+    max-width: 15%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    color: #9FA4AF;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+}
+
+.title {
+    color: #7D7D7D;
+    margin-top: 0.6rem;
+    font-weight: bold;
+}
+
+.items {
+    color: #555555;
+    font-size: 0.9rem;
+    margin: 1.7rem 0 1.5rem 0;
+}
+
+.twitterTitle {
+    color: white;
+}
+
+.items span {
+    margin-left: 1rem;
+}
+
+input.input {
+    border-radius: 10px;
+    background-color: #111111;
+    color: #9FA4AF;
+    border: 1px solid #111111;
+    padding: 0 10px;
+    margin: 1rem 0;
+}
+
+input.inputError {
+    background-color: rgb(237,33,81);
+    color: #ffffff;
+}
+
+button.subscribeButton {
+    border: 1px solid #F6663F;
+    color: white;
+    border-radius: 30px;
+    background: rgb(237,33,81);
+    background: linear-gradient(63deg, rgba(237,33,81,1) 0%, rgba(246,102,63,1) 100%);
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    height: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+button.subscribeButton:hover {
+    font-size: 0.8rem;
+}
+
+.errorInfo {
+    color: rgb(237,33,81);
+}
