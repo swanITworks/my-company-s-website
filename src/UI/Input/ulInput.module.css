@@ -1,0 +1,46 @@
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.8rem;
+}
+
+input {
+    border: 0px;
+    border-bottom: 1px #EBEBEB solid;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    font-size: 0.7rem;
+}
+
+input:focus {
+    outline: none !important;
+    border: 0px;
+    border-bottom: 1px #f6663f solid;
+}
+
+label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.7rem;
+}
+
+input.error {
+    background-color: #f6663f;
+    border-radius: 5px;
+    color: white;
+}
+
+div.errorItem {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.7rem;
+    color: #f6663f;
+    line-height: 0.9rem;
+}
+
+textarea.error {
+    background-color: #f6663f;
+    border-radius: 5px;
+    color: white;
+}

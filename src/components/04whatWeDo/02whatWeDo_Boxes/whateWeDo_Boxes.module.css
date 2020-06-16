@@ -1,9 +1,0 @@
-.whatWeDoBoxes {
-    display: flex;
-    justify-content: center;
-    width: 64%;
-    margin-top: 3rem;
-    border: #707070 solid 1px;
-    -webkit-box-shadow: -1px -1px 14px 2px #707070;
-    box-shadow: -1px -1px 14px 2px #707070;
-}

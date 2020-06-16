@@ -4,7 +4,8 @@
     background-color: #171717;
     align-items: center;
     width: 100%;
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -15,6 +16,3 @@
     justify-content: space-around;
 }
 
-.copyright {
-    color: #FFFFFF;
-}

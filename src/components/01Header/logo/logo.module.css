@@ -1,0 +1,30 @@
+.logoArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoSvg {
+    width: 70px;
+    margin-right: 1rem;
+}
+
+.scrollSVG {
+    width: 50px;
+    margin-right: 0.2rem;
+}
+
+.logo {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.scroll {
+    font-size: 1.5rem;
+}
+
+span {
+    color: #F6663F;
+}

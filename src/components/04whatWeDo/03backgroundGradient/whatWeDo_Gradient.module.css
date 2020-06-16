@@ -1,9 +1,0 @@
-.backgroundGradient {
-    background: rgb(246,102,63);
-    background: linear-gradient(299deg, rgba(246,102,63,1) 0%, rgba(255,0,60,1) 64%);
-    width: 100%;
-    height: 480px;
-    position: absolute;
-    transform: translateY(296px);
-    z-index: -1;
-}

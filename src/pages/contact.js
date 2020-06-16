@@ -1,15 +1,13 @@
 import React from "react"
 import Layout from "../hoc/Layout/layout"
 import Slider from "../components/02Slider/slider"
-import AboutUs from "../components/03AboutUs/aboutUs"
-import OurTeam from "../components/05OurTeam/ourTeam"
+import Contact from "../components/06Contact/contact"
 
 const about = () => (
   <Layout>
     <Slider/>
-    <AboutUs/>
-    <OurTeam/>
+    <Contact/>
   </Layout>
 )
 
-export default about;
+export default about

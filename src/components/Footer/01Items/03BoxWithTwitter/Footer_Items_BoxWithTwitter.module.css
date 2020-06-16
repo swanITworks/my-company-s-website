@@ -1,5 +1,5 @@
 .twitterBox {
-    max-width: 20%;
+    max-width: 12%;
 }
 
 .title {
@@ -16,8 +16,4 @@
 
 .twitterTitle {
     color: white;
-}
-
-.items span {
-    margin-left: 1rem;
 }

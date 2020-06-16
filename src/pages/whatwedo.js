@@ -1,14 +1,13 @@
 import React from "react"
 import Layout from "../hoc/Layout/layout"
 import Slider from "../components/02Slider/slider"
-import AboutUs from "../components/03AboutUs/aboutUs"
-import OurTeam from "../components/05OurTeam/ourTeam"
+import WhatWeDo from "../components/04WhatWeDo/whatWeDo"
+
 
 const about = () => (
   <Layout>
     <Slider/>
-    <AboutUs/>
-    <OurTeam/>
+    <WhatWeDo/>
   </Layout>
 )
 

@@ -1,0 +1,21 @@
+.dot {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    color: black;
+    border-radius: 5px;
+    border: 1px black solid;
+    background-color: black;
+    margin: 0.5rem;
+}
+
+.selected {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    color: white;
+    border-radius: 5px;
+    border: 1px white solid;
+    background-color: white;
+    margin: 0.5rem;
+}
