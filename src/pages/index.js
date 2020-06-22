@@ -8,7 +8,7 @@ import Contact from "../components/06Contact/contact"
 
 const IndexPage = () => (
   <Layout>
-    <Slider/>
+    <Slider selected={0}/>
     <AboutUs/>
     <WhatWeDo/>
     <OurTeam/>

@@ -6,7 +6,7 @@ import WhatWeDo from "../components/04WhatWeDo/whatWeDo"
 
 const about = () => (
   <Layout>
-    <Slider/>
+    <Slider selected={2}/>
     <WhatWeDo/>
   </Layout>
 )

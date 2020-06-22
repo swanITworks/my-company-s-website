@@ -5,7 +5,7 @@ import Contact from "../components/06Contact/contact"
 
 const about = () => (
   <Layout>
-    <Slider/>
+    <Slider selected={3}/>
     <Contact/>
   </Layout>
 )

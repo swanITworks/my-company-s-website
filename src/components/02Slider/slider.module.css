@@ -1,6 +1,6 @@
 .slider {
-    background-image: url("../../../src/images/slider4.jpg");
     background-size: cover;
+    background-position: bottom;
     height: 100vh;
     color: black;
     display: flex;

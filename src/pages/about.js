@@ -6,7 +6,7 @@ import OurTeam from "../components/05OurTeam/ourTeam"
 
 const about = () => (
   <Layout>
-    <Slider/>
+    <Slider selected={1}/>
     <AboutUs/>
     <OurTeam/>
   </Layout>

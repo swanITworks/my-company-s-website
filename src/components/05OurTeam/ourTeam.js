@@ -53,7 +53,6 @@ const OurTeam = () => {
     setProgressValues([0, 0, 0, 0])
   }, [])
 
-
   const changeProgress = (person) => {
     const values = employeesData[person].skills.map((item, index) => {
       const [result] = Object.values(item)
