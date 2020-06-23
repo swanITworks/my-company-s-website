@@ -6,7 +6,7 @@ import Form from "./03contact_form/contact_form"
 
 const Contact = () => {
   return (
-    <section className={classes.contact}>
+    <section id={'contact'} className={classes.contact}>
       <ContactHeader/>
       <Icons/>
       <Form/>

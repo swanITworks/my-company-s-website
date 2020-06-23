@@ -101,12 +101,12 @@ const WhatWeDo = () => {
   }
 
   return (
-    <section className={classes.whatWeDo}>
+    <section id={'whatWeDo'} className={classes.whatWeDo}>
       <Header/>
       <div className={classes.middleSection}>
-        <div role='button' tabIndex="0" className={classes.buttonLeft} onClick={() => changeHandler("minus")} onKeyPress={() => changeHandler("minus")}></div>
+        <div role='button' tabIndex="2" className={classes.buttonLeft} onClick={() => changeHandler("minus")} onKeyPress={() => changeHandler("minus")}></div>
         <Boxes showBoxes={toShow} />
-        <div role='button' tabIndex="-1" className={classes.buttonRight} onClick={() => changeHandler("plus")} onKeyPress={() => changeHandler("minus")}></div>
+        <div role='button' tabIndex="3" className={classes.buttonRight} onClick={() => changeHandler("plus")} onKeyPress={() => changeHandler("minus")}></div>
       </div>
       <Dots dotsQuantity={items.length} isShowing={itemToShow}/>
     </section>

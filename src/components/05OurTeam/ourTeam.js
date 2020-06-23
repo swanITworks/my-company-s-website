@@ -83,12 +83,12 @@ const OurTeam = () => {
   }
 
   return (
-    <section className={classes.ourTeam} onMouseEnter={() => changeProgress(person)}>
+    <section id={'ourTeam'} className={classes.ourTeam} onMouseEnter={() => changeProgress(person)}>
       <OurTeamHeader/>
       <div className={classes.middleSection}>
-        <div role='button' tabIndex='0' className={classes.buttonLeft} onClick={() => {changePerson("subtract")}} onKeyPress={() => changePerson("subtract")}></div>
+        <div role='button' tabIndex='4' className={classes.buttonLeft} onClick={() => {changePerson("subtract")}} onKeyPress={() => changePerson("subtract")}></div>
         <OurTeamBoxes person={employees[person]}/>
-        <div role='button' tabIndex='-1' className={classes.buttonRight} onClick={() => {changePerson("add")}} onKeyPress={() => changePerson("add")}></div>
+        <div role='button' tabIndex='5' className={classes.buttonRight} onClick={() => {changePerson("add")}} onKeyPress={() => changePerson("add")}></div>
       </div>
       <OurTeamSkills skills={employees[person].skills} progressValues={progressValues}/>
     </section>

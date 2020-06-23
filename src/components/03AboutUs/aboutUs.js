@@ -5,21 +5,18 @@ import OurBestItems from "./ourBestItems/ourBestItems"
 const AboutUs = () => {
 
   return (
-    <section className={classes.aboutUs}>
+    <section id={'about'} className={classes.aboutUs}>
       <article className={classes.aboutBox}>
         <div className={classes.leftSide}>
           <p className={classes.title}>ABOUT US</p>
-          <p>We are the best consulting Company business and innovation marketing</p>
+          <p>We are the best software house Company and innovation marketing.</p>
         </div>
         <div className={classes.rightSide}>
-          <p>Eaque ipsa quae ab illo inventore veritatis et <span>quasi architecto</span> beatae vitae dicta sunt explicabo. Nemo
-            ipsam voluptatem quia voluptas sit aspernatur aut tortor nec commodo ultricies, vitae viverra urna <span>nulla sed
-              turpis.</span> Nullam lacinia faucibus risus, a euismod lorem tincidunt</p>
-          <p className={classes.additionalText}>Sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-            sit amet, consectetur, adipisci
-            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-            voluptatem. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula ,hendrerit ac nisi
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <p>Probably already had a chance to cooperate with people from the <span>IT industry. </span>
+            We in the past also and know that mutual understanding can be difficult.
+             We are <span>business practitioners</span> Thanks that, we will take care of your needs best.</p>
+          <p className={classes.additionalText}>We are a software house but our employees also have experience in industry branches such as production, services, hotel, trade and management. Our organization employ specialists from all over the world, use modern working methods, mainly work remotely, but we can also meet at your office or in central London. Every client is welcome, works with small start ups and big enterprises.
+          </p>
         </div>
       </article>
       <OurBestItems/>

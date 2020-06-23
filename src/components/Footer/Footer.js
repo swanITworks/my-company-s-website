@@ -9,7 +9,7 @@ import Copyright from "./01Items/06Copyright/Footer_Items_Copyright"
 
 const Footer = () => {
   return (
-    <section className={classes.footer}>
+    <section id={'footer'} className={classes.footer}>
       <div className={classes.footerBoxes}>
         <BoxWithLogo/>
         <BoxWithSiteMap/>

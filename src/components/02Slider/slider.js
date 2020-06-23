@@ -17,6 +17,7 @@ const Slider = (props) => {
       mainTitleEnd: "with us",
       slogan: "We provide bespoke cloud software for your clients and company.",
       photo: slider1,
+      onClick: '/#about',
     },
     {
       introduction: "Code craftsmen.",
@@ -25,6 +26,7 @@ const Slider = (props) => {
       mainTitleEnd: "team for you.",
       slogan: "Our people make wonders, you will be surprised by the effects of our work.",
       photo: slider2,
+      onClick: '/about#ourTeam',
       marginTop: '6rem',
     },
     {
@@ -34,6 +36,7 @@ const Slider = (props) => {
       mainTitleEnd: "thanks us.",
       slogan: "We work with small and big Players, everybody is important!",
       photo: slider3,
+      onClick: '/whatwedo#whatWeDo',
 
     },
     {
@@ -43,6 +46,7 @@ const Slider = (props) => {
       mainTitleEnd: "of your business",
       slogan: "All what you need we can pack to your watch.",
       photo: slider4,
+      onClick: '/contact#contact',
     },
   ]
 
@@ -82,7 +86,7 @@ const Slider = (props) => {
           </h2>
           <h1 className={classes.slogan}>{sliders[chosenSlider].slogan}</h1>
           <div>
-            <ActionButton type='transparent' text='EXPLORE MORE'/><ActionButton type='ok' text='PORTFOLIO'/>
+            <ActionButton type='transparent' text='EXPLORE MORE' onClick={sliders[chosenSlider].onClick}/><ActionButton text='CONTACT' onClick={'contact#contact'}/>
           </div>
         </article>
         <SliderButton type="next" onClick={()=>choseSliderHandler('plus')}/>

@@ -1,21 +1,19 @@
 import React from "react"
-
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import classes from "./actionButton.module.css"
 
 const ActionButton = (props) => {
   if (props.type === "transparent") {
     return (
-      <button
-        className={classes.actionButtonTransparency}>{props.text}</button>
+      <AnchorLink to={props.onClick} className={classes.actionButtonTransparency} stripHash>{props.text}</AnchorLink>
     )
   } else if (props.type === "orange") {
     return (
-      <button
-        className={classes.orange} onClick={props.onClick} type='submit'>{props.text}</button>
+      <AnchorLink to={'/contact#contact'} className={classes.orange} stripHash>{props.text}</AnchorLink>
     )
   } else {
     return (
-      <button className={classes.actionButton}>{props.text}</button>
+      <AnchorLink to={'/contact#contact'} className={classes.actionButton} stripHash>{props.text}</AnchorLink>
     )
   }
 }

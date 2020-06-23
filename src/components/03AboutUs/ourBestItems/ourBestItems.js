@@ -9,17 +9,17 @@ const ourBestItems = () => {
   const bestData = [{
     number: "01.",
     title: "Best understanding of business.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod numquam eius modi tempora incidunt",
+    text: "We are not just programmers, understand your needs like no other because we practice business ourselves.",
   },
     {
       number: "02.",
       title: "Best innovative technologies.",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod numquam eius modi tempora incidunt",
+      text: "When others are just learning, we use only the latest technologies. Thanks to which our applications are the fastest.",
     },
     {
       number: "03.",
       title: "Best flexibility and speed of action.",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod numquam eius modi tempora incidunt",
+      text: "Not only our software is fast but we also work quickly. We don't want to be a large corporation, which makes us flexible.",
     },
   ]
 

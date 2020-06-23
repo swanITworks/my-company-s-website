@@ -26,7 +26,7 @@ const Header = () => {
   }
 
   return (
-    <header className={classesArray.join(" ")}>
+    <header id={'home'} className={classesArray.join(" ")}>
       <div className={classes.items}>
         <Logo isScroll={scroll}/>
         <NavigationItems isScroll={scroll}/>
