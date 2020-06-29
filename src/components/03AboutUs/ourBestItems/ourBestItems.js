@@ -5,7 +5,6 @@ import classes from "./ourBestItems.module.css"
 const ourBestItems = () => {
 
   const aboutBestClasses = [classes.aboutBox, classes.aboutBests]
-
   const bestData = [{
     number: "01.",
     title: "Best understanding of business.",

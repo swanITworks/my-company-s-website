@@ -5,14 +5,13 @@ const BoxWithLogo = () => {
   return (
     <article className={classes.Box}>
       <p className={classes.logo}>Swan It Works.</p>
-      <p className={classes.info}>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-        sunt explicabo.</p>
+      <p className={classes.info}>Software house with strong understanding of business processes. We produce bespoke websites, mobile apps, web apps, desktop software, etc.</p>
       <p className={classes.businessAddressTitle}>BUSINESS ADDRESS:</p>
-      <p className={classes.businessAddress}><span>WM SWAN LTD</span><br/>London Oxford Street, 012 United Kingdom.</p>
+      <p className={classes.businessAddress}><span>WM SWAN LTD</span><br/>Wrotham Road 126, NW1 9SU London, United Kingdom.</p>
       <div className={classes.businessPhoneEmail}>
         <div>
           <p className={classes.businessAddressTitle}>BUSINESS PHONE:</p>
-          <p className={classes.businessAddress}>+44 15146343120</p>
+          <p className={classes.businessAddress}>+44 7551 784266</p>
         </div>
         <div>
           <p className={classes.businessAddressTitle}>BUSINNESS EMAIL:</p>

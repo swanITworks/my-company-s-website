@@ -7,7 +7,6 @@ const WhatWeDo_Boxes = (props) => {
   const showBoxes = props.showBoxes
   return (
     <article className={classes.whatWeDoBoxes}>
-
       {showBoxes.map((item, index) => {
           if (index % 2 === 0) {
             return <WhatWeDoBoxesBox key={index} title={item.title} info={item.info} even={true}/>

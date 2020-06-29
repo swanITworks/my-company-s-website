@@ -3,8 +3,8 @@ import Icon from "./01contact_icons_icon/contact_icons_icon"
 import '../../../utils/fontawesome'
 import classes from "./contact_icons.module.css"
 
-const phones = ["Phone 01: (+032) 3456 7890","Phone 01: (+032) 3456 7890"];
-const address = ["Oxford Street","London"];
+const phones = ["+44 7551 784266","+44 7902 474888 "];
+const address = ["Wrotham Road 126","London NW1 9SU"];
 const email = ["cs@swanitworks.com"];
 
 const Icons = () => {

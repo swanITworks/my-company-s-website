@@ -1,8 +1,17 @@
 import React from "react"
 import classes from "./whateWeDo_Boxes_Box.module.css"
-import mobileApps from "../../../../images/mobileApps.jpg"
-import webApps from "../../../../images/webApps.jpg"
-import websites from "../../../../images/websites.jpg"
+import mobileApps from "../../../../images/whatWeDo/mobileApps.jpg"
+import webApps from "../../../../images/whatWeDo/webApps.jpg"
+import websites from "../../../../images/whatWeDo/websites.jpg"
+import erp from "../../../../images/whatWeDo/erp.jpg"
+import ecommerce from "../../../../images/whatWeDo/ecommerce.jpg"
+import cms from "../../../../images/whatWeDo/cms.jpg"
+import crm from "../../../../images/whatWeDo/crm.jpg"
+import b2b from "../../../../images/whatWeDo/b2b.jpg"
+import bespoke from "../../../../images/whatWeDo/bespoke.jpg"
+import automation from "../../../../images/whatWeDo/autom.jpg"
+import integrations from "../../../../images/whatWeDo/integrations.jpg"
+import support from "../../../../images/whatWeDo/itsupport.jpg"
 
 
 const whatWeDo_Boxes_Box = (props) => {
@@ -18,15 +27,43 @@ const whatWeDo_Boxes_Box = (props) => {
   switch (title) {
     case "Mobile Apps":
       imageStyles.backgroundImage = `url(${mobileApps})`
-      break
+      break;
     case "Web Apps":
       imageStyles.backgroundImage = `url(${webApps})`
-      break
+      break;
     case "Websites":
       imageStyles.backgroundImage = `url(${websites})`
-      break
+      break;
+    case "ERP Systems":
+      imageStyles.backgroundImage = `url(${erp})`
+      break;
+    case "E-commerce":
+      imageStyles.backgroundImage = `url(${ecommerce})`
+      break;
+      case "CMS Systems":
+      imageStyles.backgroundImage = `url(${cms})`
+      break;
+      case "CRM Software":
+      imageStyles.backgroundImage = `url(${crm})`
+      break;
+      case "B2B Systems":
+      imageStyles.backgroundImage = `url(${b2b})`
+      break;
+      case "Bespoke Software":
+      imageStyles.backgroundImage = `url(${bespoke})`
+      break;
+      case "Automation processes":
+      imageStyles.backgroundImage = `url(${automation})`
+      break;
+      case "Integration of systems":
+      imageStyles.backgroundImage = `url(${integrations})`
+      break;
+      case "IT support":
+      imageStyles.backgroundImage = `url(${support})`
+      break;
     default:
-      return null;
+      imageStyles.backgroundImage = `url(${mobileApps})`
+      break;
   }
 
   return (
