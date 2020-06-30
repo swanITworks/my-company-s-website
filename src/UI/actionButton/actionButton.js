@@ -1,5 +1,5 @@
 import React from "react"
-import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import classes from "./actionButton.module.css"
 
 const ActionButton = (props) => {
@@ -9,11 +9,15 @@ const ActionButton = (props) => {
     )
   } else if (props.type === "orange") {
     return (
-      <AnchorLink to={'/contact#contact'} className={classes.orange} stripHash>{props.text}</AnchorLink>
+      <AnchorLink to={"/contact#contact"} className={classes.orange} stripHash>{props.text}</AnchorLink>
+    )
+  } else if (props.type === "form") {
+    return (
+      <button onClick={props.onClick} className={classes.orange}>{props.text}</button>
     )
   } else {
     return (
-      <AnchorLink to={'/contact#contact'} className={classes.actionButton} stripHash>{props.text}</AnchorLink>
+      <AnchorLink to={"/contact#contact"} className={classes.actionButton} stripHash>{props.text}</AnchorLink>
     )
   }
 }

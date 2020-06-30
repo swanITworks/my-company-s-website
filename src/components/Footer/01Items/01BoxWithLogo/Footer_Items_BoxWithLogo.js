@@ -14,8 +14,8 @@ const BoxWithLogo = () => {
           <p className={classes.businessAddress}>+44 7551 784266</p>
         </div>
         <div>
-          <p className={classes.businessAddressTitle}>BUSINNESS EMAIL:</p>
-          <p className={classes.businessAddress}>contact@swanitworks.com</p>
+          <p className={classes.businessAddressTitle}>BUSINESS EMAIL:</p>
+          <p className={classes.businessAddress}>&#104;&#101;&#108;&#108;&#111;&#032;&#097;&#116;&#032;&#115;&#119;&#097;&#110;&#105;&#116;&#119;&#111;&#114;&#107;&#115;&#032;&#100;&#111;&#116;&#032;&#099;&#111;&#109;</p>
         </div>
       </div>
     </article>

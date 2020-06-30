@@ -5,8 +5,7 @@ import classes from "./contact_icons.module.css"
 
 const phones = ["+44 7551 784266","+44 7902 474888 "];
 const address = ["Wrotham Road 126","London NW1 9SU"];
-const email = ["cs@swanitworks.com"];
-
+const email = ["hello at swanitworks dot com"];
 const Icons = () => {
   return (
     <article className={classes.icons}>

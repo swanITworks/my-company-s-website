@@ -295,7 +295,7 @@ const Form = () => {
       <div className={classes.formInputs}>
         {formTextArea}
       </div>
-      <ActionButton onClick={onClickHandler} type={"orange"} text={"SEND TO US"}/>
+      <ActionButton onClick={onClickHandler} type={'form'} text={"SEND TO US"}/>
     </form>
   )
 
