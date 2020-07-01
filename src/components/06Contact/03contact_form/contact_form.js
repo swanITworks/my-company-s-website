@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import classes from "./contact_form.module.css"
 import Input from "../../../UI/Input/ulInput"
 import ActionButton from "../../../UI/actionButton/actionButton"
+import axios from "axios"
+import { errorMap } from "../../../../.cache/error-overlay-handler"
 
 const formElements = {
   name: {
@@ -170,7 +172,19 @@ const Form = () => {
     console.log(inputElements)
     console.log(isFormValid)
     if (isFormValid) {
-      setIsFormSent(true)
+      axios.post("http://localhost:3000/msg", {
+        name: inputElements.name.value,
+        email: inputElements.email.value,
+        title: inputElements.subject.value,
+        msg: inputElements.message.value,
+      }).then(() => {
+          setIsFormSent(true)
+        },
+      ).catch(
+        (error) => {
+          console.log(error)
+        },
+      )
     }
   }
 
@@ -284,7 +298,6 @@ const Form = () => {
         } else return null
       },
     )
-
   )
 
   const form = (
@@ -295,7 +308,7 @@ const Form = () => {
       <div className={classes.formInputs}>
         {formTextArea}
       </div>
-      <ActionButton onClick={onClickHandler} type={'form'} text={"SEND TO US"}/>
+      <ActionButton onClick={onClickHandler} type={"form"} text={"SEND TO US"}/>
     </form>
   )
 
