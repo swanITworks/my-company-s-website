@@ -63,8 +63,17 @@ textarea:focus {
 }
 
 .successMessage {
+    text-align: center;
     font-family: 'Nunito', sans-serif;
     margin-top: 3rem;
     color: #f6663f;
+    font-size: 2rem;
+}
+.errorMessage {
+    line-height: 2rem;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 3rem;
+    color: rgb(237,33,81);
     font-size: 2rem;
 }

@@ -13,7 +13,7 @@ const ActionButton = (props) => {
     )
   } else if (props.type === "form") {
     return (
-      <button onClick={props.onClick} className={classes.orange}>{props.text}</button>
+      <button type={"submit"} onClick={props.onClick} className={classes.orange}>{props.text}</button>
     )
   } else {
     return (
