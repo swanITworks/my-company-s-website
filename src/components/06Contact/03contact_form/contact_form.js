@@ -6,35 +6,32 @@ import axios from "axios"
 import { Spinner } from "../../../UI/spinner/Spinner"
 import { formElements } from "./const/formElements"
 import { checkValidation } from "../../../utils/checkValidation"
-import Recaptcha from 'react-recaptcha';
+import Recaptcha from "react-recaptcha"
 
 const Form = () => {
   const [inputElements, setInputElements] = useState(formElements)
-  const [isLoading,setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
   const [isFormValid, setIsFormValid] = useState(false)
   const [sentSuccess, setSentSuccess] = useState(false)
   const [sentError, setSentError] = useState(false)
-  const [captcha, setCaptcha] = useState(false)
+  const [captcha, setCaptcha] = useState({ status: false, error: "" })
 
-  let recaptchaInstance = new Recaptcha();
+  const verifyCallback = function(response) {
+    console.log(response)
+    setCaptcha({ status: true, error: "" })
+  }
 
-  const executeCaptcha = function () {
-    recaptchaInstance.execute();
-
-  };
-
-  const verifyCallback = function (response) {
-    console.log(response);
-    document.getElementById("someForm").submit();
-  };
+  const expiredCallback = () => {
+    setCaptcha({ status: false, error: "" })
+  }
 
   useEffect(() => {
     let formValid = true
     for (let key in inputElements) {
-      formValid = inputElements[key].valid.value && formValid && captcha
+      formValid = inputElements[key].valid.value && formValid && captcha.status
     }
-    setIsFormValid(formValid)
-  }, [inputElements])
+    setIsFormValid(formValid);
+  }, [inputElements, captcha.status])
 
   const onChangeHandler = (event, elementId) => {
     setInputElements({
@@ -107,9 +104,9 @@ const Form = () => {
     )
   )
 
-  const callback = function () {
-    console.log('Done!!!!');
-  };
+  const callback = function() {
+    console.log("Done!!!!")
+  }
 
   const onClickHandler = () => {
     setInputElements({
@@ -139,6 +136,12 @@ const Form = () => {
         touched: true,
       },
     })
+    if (!captcha.status) {
+      setCaptcha({
+        status: false,
+        error: "Please check the checkbox",
+      })
+    }
   }
 
   const formTextArea = (
@@ -162,16 +165,18 @@ const Form = () => {
   )
 
   const formArea = (
-    <form id={'someForm'} onSubmit={onSubmit} className={classes.formBottom}>
+    <form id={"someForm"} onSubmit={onSubmit} className={classes.formBottom}>
       <div className={classes.formInputs}>
         {formInputs}
       </div>
       <div className={classes.formInputs}>
         {formTextArea}
       </div>
-      <Recaptcha sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="dark" render="explicit"
-                 onloadCallback={callback} verifyCallback={verifyCallback}/>
-      <ActionButton onClick={executeCaptcha} type={"form"} text={"SEND TO US"}/>
+      <Recaptcha sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" render="explicit"
+                 onloadCallback={callback} verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
+      {captcha.error ? <p className={classes.captchaError}>{captcha.error}</p> : null}
+
+      <ActionButton onClick={onClickHandler} type={"form"} text={"SEND TO US"}/>
     </form>
   )
 
@@ -190,16 +195,15 @@ const Form = () => {
   )
 
 
-
   const sendingForm = () => {
     if (isLoading) {
       return <Spinner/>
     } else if (sentSuccess) {
-      return success;
+      return success
     } else if (sentError) {
       return error
     } else return formArea
-  };
+  }
 
   return (
     <article className={classes.form}>
@@ -209,7 +213,6 @@ const Form = () => {
         </p>
       </div>
       {sendingForm()}
-
     </article>
   )
 }
