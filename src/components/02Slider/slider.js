@@ -72,6 +72,8 @@ const Slider = (props) => {
           setChosenSlider(sliders.length-1);
           break;
         }
+      default:
+        return null
     }
   }
 

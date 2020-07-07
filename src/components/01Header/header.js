@@ -19,11 +19,11 @@ const Header = () => {
     return ()=>window.removeEventListener("scroll",offset);
   },[])
 
-  const classesArray = [classes.header]
+  let classesArray = [classes.header]
 
   if (scroll) {
     classesArray.push(classes.scroll)
-  }
+  } else { classesArray = [classes.header] }
 
   return (
     <header id={'home'} className={classesArray.join(" ")}>

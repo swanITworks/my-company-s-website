@@ -83,3 +83,9 @@ textarea:focus {
     color: rgb(237,33,81);
     font-size: 2rem;
 }
+
+.captchaArea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

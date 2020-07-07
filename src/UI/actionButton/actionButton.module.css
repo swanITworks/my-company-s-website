@@ -58,12 +58,13 @@
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     cursor: pointer;
-    display: inline-block;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
+    align-self: center;
 }
 
 .orange:hover {
     font-size: 0.8rem;
 }
+

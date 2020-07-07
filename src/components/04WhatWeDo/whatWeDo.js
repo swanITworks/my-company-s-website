@@ -115,9 +115,9 @@ const WhatWeDo = () => {
     <section id={'whatWeDo'} className={classes.whatWeDo}>
       <Header/>
       <div className={classes.middleSection}>
-        <div role='button' tabIndex="2" className={classes.buttonLeft} onClick={() => changeHandler("minus")} onKeyPress={() => changeHandler("minus")}></div>
+        <div aria-label="Change service -" role='button' tabIndex="0" className={classes.buttonLeft} onClick={() => changeHandler("minus")} onKeyPress={() => changeHandler("minus")}></div>
         <Boxes showBoxes={toShow} />
-        <div role='button' tabIndex="3" className={classes.buttonRight} onClick={() => changeHandler("plus")} onKeyPress={() => changeHandler("minus")}></div>
+        <div aria-label="Change service +" role='button' tabIndex="0" className={classes.buttonRight} onClick={() => changeHandler("plus")} onKeyPress={() => changeHandler("minus")}></div>
       </div>
       <Dots dotsQuantity={items.length} isShowing={itemToShow}/>
     </section>

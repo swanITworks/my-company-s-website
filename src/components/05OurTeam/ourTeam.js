@@ -78,17 +78,22 @@ const OurTeam = () => {
           setPerson(employees.length - 1)
         }
         break
-      default: return null
+      default:
+        return null
     }
   }
 
   return (
-    <section id={'ourTeam'} className={classes.ourTeam} onMouseEnter={() => changeProgress(person)}>
+    <section tabIndex='-1' role="textbox" id={"ourTeam"} className={classes.ourTeam} onMouseEnter={() => changeProgress(person)}>
       <OurTeamHeader/>
       <div className={classes.middleSection}>
-        <div role='button' tabIndex='4' className={classes.buttonLeft} onClick={() => {changePerson("subtract")}} onKeyPress={() => changePerson("subtract")}></div>
+        <div aria-label="Change person -" role='button' tabIndex='0' className={classes.buttonLeft} onClick={() => {
+          changePerson("subtract")
+        }} onKeyPress={() => changePerson("subtract")}></div>
         <OurTeamBoxes person={employees[person]}/>
-        <div role='button' tabIndex='5' className={classes.buttonRight} onClick={() => {changePerson("add")}} onKeyPress={() => changePerson("add")}></div>
+        <div aria-label="Change person +" role='button' tabIndex='0' className={classes.buttonRight} onClick={() => {
+          changePerson("add")
+        }} onKeyPress={() => changePerson("add")}></div>
       </div>
       <OurTeamSkills skills={employees[person].skills} progressValues={progressValues}/>
     </section>

@@ -8,7 +8,7 @@ import classes from "../sliderButton/sliderButton.module.css"
 const sliderButton = ( props ) => {
   if (props.type === 'prev') {
     return (
-      <div role='button' tabIndex="0" className={classes.sliderButton} onClick={props.onClick}>
+      <div role='button' tabIndex="0" className={classes.sliderButton} onClick={props.onClick} onKeyPress={props.onClick}>
         <FontAwesomeIcon icon={faArrowLeft}/>
         <p className={classes.sliderButtonText}>PREV</p>
       </div>
@@ -16,7 +16,7 @@ const sliderButton = ( props ) => {
   }
   if (props.type === 'next') {
     return (
-      <div role='button' tabIndex="1" className={classes.sliderButton} onClick={props.onClick}>
+      <div role='button' tabIndex="0" className={classes.sliderButton} onClick={props.onClick} onKeyPress={props.onClick}>
         <p className={classes.sliderButtonText}>NEXT</p>
         <FontAwesomeIcon icon={faArrowRight}/>
       </div>

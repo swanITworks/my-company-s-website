@@ -14,15 +14,14 @@ const Form = () => {
   const [isFormValid, setIsFormValid] = useState(false)
   const [sentSuccess, setSentSuccess] = useState(false)
   const [sentError, setSentError] = useState(false)
-  const [captcha, setCaptcha] = useState({ status: false, error: "" })
+  const [captcha, setCaptcha] = useState({ status: false, error: "", token: "" })
 
   const verifyCallback = function(response) {
-    console.log(response)
-    setCaptcha({ status: true, error: "" })
+    setCaptcha({ status: true, error: "", token: response })
   }
 
   const expiredCallback = () => {
-    setCaptcha({ status: false, error: "" })
+    setCaptcha({ status: false, error: "", token: "" })
   }
 
   useEffect(() => {
@@ -30,7 +29,7 @@ const Form = () => {
     for (let key in inputElements) {
       formValid = inputElements[key].valid.value && formValid && captcha.status
     }
-    setIsFormValid(formValid);
+    setIsFormValid(formValid)
   }, [inputElements, captcha.status])
 
   const onChangeHandler = (event, elementId) => {
@@ -48,8 +47,6 @@ const Form = () => {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    console.log(inputElements)
-    console.log(isFormValid)
 
     if (isFormValid) {
       setIsLoading(true)
@@ -58,6 +55,7 @@ const Form = () => {
         email: inputElements.email.value,
         title: inputElements.subject.value,
         msg: inputElements.message.value,
+        token: captcha.token,
       }).then(() => {
           setSentSuccess(true)
           setSentError(false)
@@ -103,10 +101,6 @@ const Form = () => {
       },
     )
   )
-
-  const callback = function() {
-    console.log("Done!!!!")
-  }
 
   const onClickHandler = () => {
     setInputElements({
@@ -172,11 +166,17 @@ const Form = () => {
       <div className={classes.formInputs}>
         {formTextArea}
       </div>
-      <Recaptcha sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" render="explicit"
-                 onloadCallback={callback} verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
-      {captcha.error ? <p className={classes.captchaError}>{captcha.error}</p> : null}
-
-      <ActionButton onClick={onClickHandler} type={"form"} text={"SEND TO US"}/>
+      <div className={classes.captchaArea}>
+        <div style={{marginRight: 'auto', visibility: 'hidden', width: '350px'}}>
+         chuj
+        </div>
+        <ActionButton onClick={onClickHandler} type={"form"} text={"SEND TO US"}/>
+        <div style={{marginLeft: 'auto'}}>
+          <Recaptcha render='explicit' onloadCallback={console.log.bind(this, "recaptcha loaded")} sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
+                     verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
+          {captcha.error ? <p className={classes.captchaError}>{captcha.error}</p> : null}
+        </div>
+      </div>
     </form>
   )
 
