@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import classes from "./slider.module.css"
 import SliderButton from "./sliderButton/sliderButton"
+import SliderButtonMobile from "./sliderButtonMobile/sliderButtonMobile"
 import ActionButton from "../../UI/actionButton/actionButton"
 import slider1 from "../../images/slider/slider1.jpg"
 import slider2 from "../../images/slider/slider2.jpg"
@@ -92,6 +93,10 @@ const Slider = (props) => {
           </div>
         </article>
         <SliderButton type="next" onClick={()=>choseSliderHandler('plus')}/>
+      </div>
+      <div className={classes.mobileArows}>
+        <SliderButtonMobile type="prev" onClick={()=>choseSliderHandler('minus')}/>
+        <SliderButtonMobile type="next" onClick={()=>choseSliderHandler('minus')}/>
       </div>
     </section>
   )

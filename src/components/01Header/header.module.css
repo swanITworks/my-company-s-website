@@ -26,3 +26,40 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.drawerToggle {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: rgba(241, 248, 252, .3) solid 1px;
+        height: 4rem;
+        background-color: rgba(0,0,0,.3);
+        position:fixed;
+        top:0;
+        z-index:100;
+    }
+    .scroll {
+        width: 100%;
+        background-color: #171717;
+        border-bottom: #171717 solid 1px;
+        -webkit-box-shadow: 0px 9px 30px -11px rgba(28,28,28,1);
+        -moz-box-shadow: 0px 9px 30px -11px rgba(28,28,28,1);
+        box-shadow: 0px 9px 30px -11px rgba(28,28,28,1);
+        height: 2.5rem;
+    }
+
+    .items {
+        display: flex;
+        width: 95%;
+        justify-content: space-around;
+    }
+}

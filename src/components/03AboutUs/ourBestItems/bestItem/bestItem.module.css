@@ -19,3 +19,25 @@
     font-weight: 300;
     color: #9FA4AF;
 }
+
+@media only screen and (max-width: 600px) {
+    .bestItem {
+        margin-top: 0.5rem;
+    }
+    .number {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .bestTitle {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .bestText {
+        margin-left: 2rem;
+        font-size: 0.7rem;
+        font-weight: 300;
+        color: #9FA4AF;
+    }
+}

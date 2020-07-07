@@ -1,6 +1,7 @@
 .slider {
     background-size: cover;
     background-position: bottom;
+    background-color: #171717;
     height: 100vh;
     color: black;
     display: flex;
@@ -46,5 +47,125 @@ article.main {
 
 span {
     color: #F6663F;
+}
+
+.mobileArows {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) and (min-height: 641px) {
+    .slider {
+        background-size: cover;
+        background-position: 40% 20%;
+        min-height: 100vh;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    article.main {
+        margin-top: 2rem;
+        margin-right: 0rem;
+        text-align: center;
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .hello {
+        color: white;
+        margin: 0px 0px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+
+    .mainSlogan {
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin: 1rem 0rem;
+    }
+
+    .slogan {
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        margin-top: 0.7rem;
+    }
+
+    .mobileArows {
+        margin-top: 3rem;
+        display: flex;
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width: 600px) and (max-height: 640px){
+    .slider {
+        background-size: cover;
+        background-position: 40% 20%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    article.main {
+        margin-top: 1.4rem;
+        margin-right: 0rem;
+        text-align: center;
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .hello {
+        color: white;
+        margin: 0px 0px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .mainSlogan {
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin: 0.8rem 0rem;
+    }
+
+    .slogan {
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 0.7rem;
+    }
+
+    .mobileArows {
+        margin-top: 2.5rem;
+        display: flex;
+        color: white;
+    }
 }
 

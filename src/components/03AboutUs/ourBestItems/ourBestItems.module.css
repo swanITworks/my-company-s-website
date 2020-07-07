@@ -11,3 +11,19 @@
     flex-direction: row;
     width: 65%;
 }
+
+@media only screen and (max-width: 600px) {
+    .aboutBests {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        border-top: 1px solid #EBEBEB;
+        padding-top: 0rem;
+        margin-top: 1rem;
+    }
+    .aboutBox {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}
