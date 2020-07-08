@@ -10,11 +10,12 @@ function ourTeam_Boxes(props) {
     backgroundSize: "cover",
     width: '33.5%',
     backgroundRepeat: 'noRepeat',
+    float: 'left',
   }
 
   return (
     <article className={classes.ourTeamBoxes}>
-      <div style={imageStyles}></div>
+      <div style={imageStyles} className={classes.imageBox}></div>
       <div className={classes.nameBox}>
         <p className={classes.name}><span className={classes.span}>{person.name}</span></p>
         <p className={classes.title}>{person.title}</p>

@@ -66,3 +66,44 @@
     border-bottom: 4px #F6663F solid;
     border-radius: 1px;
 }
+
+@media only screen and (max-width: 600px) and (min-height: 641px) {
+    .hide {
+        display: none;
+    }
+    .whatWeDoBoxes_Box {
+        font-family: 'Nunito', sans-serif;
+        width: 100%;
+    }
+    .bottomEven {
+        min-height: 130px;
+        padding: 0.7rem;
+    }
+    .infoEven {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        color: #FFFFFF;
+        margin: 0.4rem 0;
+    }
+}
+
+
+@media only screen and (max-width: 600px) and (max-height: 640px) {
+    .hide {
+        display: none;
+    }
+    .whatWeDoBoxes_Box {
+        font-family: 'Nunito', sans-serif;
+        width: 100%;
+    }
+    .bottomEven {
+        min-height: 130px;
+        padding: 0.7rem;
+    }
+    .infoEven {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        color: #FFFFFF;
+        margin: 0.4rem 0;
+    }
+}

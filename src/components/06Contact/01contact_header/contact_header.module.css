@@ -34,3 +34,25 @@ p.info {
     text-align: center;
     color: #9FA4AF;
 }
+
+@media only screen and (max-width: 600px) and (min-height: 641px) {
+    .contactHeader {
+        width: 90%;
+    }
+    h3.slogan {
+        font-size: 1.2rem;
+        margin: 0.8rem 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) and (max-height: 640px) {
+    .contactHeader {
+        width: 90%;
+    }
+    h3.slogan {
+        font-size: 1.2rem;
+        margin: 0.8rem 0;
+    }
+}

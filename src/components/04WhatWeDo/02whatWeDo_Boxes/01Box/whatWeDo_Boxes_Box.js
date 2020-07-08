@@ -66,8 +66,16 @@ const whatWeDo_Boxes_Box = (props) => {
       break;
   }
 
+  let classesArray = [classes.whatWeDoBoxes_Box]
+
+  if (even){
+    classesArray.push(classes.hide)
+  } else {
+    classesArray = [classes.whatWeDoBoxes_Box]
+  }
+
   return (
-    <article className={classes.whatWeDoBoxes_Box}>
+    <article className={classesArray.join(' ')}>
       <div className={classes.top}>
         <div style={imageStyles}/>
       </div>
