@@ -19,7 +19,6 @@ const BoxWithHours = () => {
           <p>SAT - SUN:</p>
           <p>CLOSED</p>
         </div>
-
       </div>
     </article>
   )

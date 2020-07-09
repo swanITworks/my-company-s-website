@@ -68,3 +68,28 @@ button.subscribeButton:hover {
 .errorInfo {
     color: rgb(237,33,81);
 }
+
+@media only screen and (max-width: 600px)  {
+    .subscribeBox {
+        max-width: 95%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title {
+        color: #7D7D7D;
+        margin: 0px;
+        font-weight: bold;
+    }
+    button.subscribeButton {
+        margin-right: 0rem;
+        margin-top: 0rem;
+    }
+    .items {
+        color: #555555;
+        font-size: 0.9rem;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}
+

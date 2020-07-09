@@ -167,11 +167,11 @@ const Form = () => {
         {formTextArea}
       </div>
       <div className={classes.captchaArea}>
-        <div style={{marginRight: 'auto', visibility: 'hidden', width: '350px'}}>
+        <div style={{marginRight: 'auto', visibility: 'hidden', width: '350px'}} className={classes.hide}>
          chuj
         </div>
         <ActionButton onClick={onClickHandler} type={"form"} text={"SEND TO US"}/>
-        <div style={{marginLeft: 'auto'}}>
+        <div style={{marginLeft: 'auto'}} className={classes.captchaMobile}>
           <Recaptcha render='explicit' onloadCallback={console.log.bind(this, "recaptcha loaded")} sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
                      verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
           {captcha.error ? <p className={classes.captchaError}>{captcha.error}</p> : null}

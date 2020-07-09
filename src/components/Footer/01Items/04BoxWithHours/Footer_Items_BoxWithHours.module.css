@@ -29,3 +29,28 @@
 .items span {
     margin-left: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .hoursBox {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .title {
+        margin: 0;
+        text-align: center;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        color: #9FA4AF;
+        margin: 0.5rem 0;
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+    .items {
+        margin: 0.5rem 0 1.5rem 0;
+    }
+}
