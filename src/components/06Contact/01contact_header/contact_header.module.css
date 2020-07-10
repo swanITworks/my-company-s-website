@@ -44,3 +44,13 @@ p.info {
         margin: 0.8rem 0;
     }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .contactHeader {
+        width: 90%;
+    }
+    h3.slogan {
+        font-size: 1.2rem;
+        margin: 0.8rem 0;
+    }
+}

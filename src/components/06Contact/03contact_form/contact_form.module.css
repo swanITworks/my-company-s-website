@@ -114,3 +114,21 @@ textarea:focus {
     }
 
 }
+
+@media only screen and (min-width: 601px) and (max-width: 992px){
+    .form {
+        width: 90%;
+    }
+    .formHeader {
+
+        width: 100%;
+    }
+    .hide {
+        display: none;
+    }
+    .captchaArea {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

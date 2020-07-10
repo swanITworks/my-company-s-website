@@ -7,14 +7,14 @@
     padding: 1rem;
     text-align: justify;
     background-color:#ffffff;
-    min-height: 160px;
+    height: 160px;
 }
 
 .bottomEven {
     background-color:#171717 !important;
     text-align: justify;
     padding: 1rem;
-    min-height: 160px;
+    height: 160px;
 }
 
 .title {
@@ -28,6 +28,7 @@
     color: #FFFFFF;
 }
 .info {
+    align-content: center;
     font-size: 0.9rem;
     font-weight: lighter;
     color: #9FA4AF;
@@ -85,6 +86,13 @@
         color: #FFFFFF;
         margin: 0.4rem 0;
     }
+    .bottom {
+        height: auto;
+    }
+
+    .bottomEven {
+        height: auto;
+    }
 }
 
 
@@ -106,4 +114,42 @@
         color: #FFFFFF;
         margin: 0.4rem 0;
     }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .hide {
+        display: none;
+    }
+    .whatWeDoBoxes_Box {
+        font-family: 'Nunito', sans-serif;
+        width: 350px;
+    }
+    .bottomEven {
+        min-height: 130px;
+        padding: 0.7rem;
+    }
+    .infoEven {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        color: #FFFFFF;
+        margin: 0.4rem 0;
+    }
+    .bottom {
+        height: auto;
+    }
+
+    .bottomEven {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .bottom {
+        height: 215px;
+    }
+    .bottomEven {
+        height: 215px;
+    }
+
 }

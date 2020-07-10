@@ -36,3 +36,9 @@
         margin: 0;
     }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .Box {
+        display: none;
+    }
+}

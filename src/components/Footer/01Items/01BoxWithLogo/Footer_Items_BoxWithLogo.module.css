@@ -45,4 +45,20 @@ div.businessPhoneEmail {
     }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    p.logo {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2rem;
+    }
+    .Box {
+        width: 40%;
+    }
+    p.info {
+        color: #555555;
+        margin: 2.5rem 0 1.5rem 0;
+    }
+
+}
+
 

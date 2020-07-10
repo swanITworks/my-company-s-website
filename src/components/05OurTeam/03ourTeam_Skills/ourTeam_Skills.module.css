@@ -71,3 +71,18 @@
     }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 992px){
+    .skill {
+        margin: 0.3rem;
+    }
+
+    .skill .description {
+        margin-bottom: 0.5rem;
+    }
+
+    .skills {
+        margin-top: 0.5rem;
+
+    }
+}
+

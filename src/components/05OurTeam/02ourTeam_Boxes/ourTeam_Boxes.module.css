@@ -99,3 +99,32 @@
         font-size: 1rem;
     }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .ourTeamBoxes {
+        display: inline-block;
+        max-width: 500px;
+        border: #252525 solid 1px;
+        min-height: auto;
+    }
+    .nameBox {
+        display: flex;
+        min-height: 250px;
+        width: 40%;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .description {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .imageBox {
+        min-height: 250px;
+        min-width: 60%;
+        display: inline-block;
+    }
+}
+

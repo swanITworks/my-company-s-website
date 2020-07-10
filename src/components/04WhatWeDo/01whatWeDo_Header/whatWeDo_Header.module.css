@@ -79,6 +79,28 @@ p.info {
     }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .whatWeDoHeader {
+        width: 100%;
+    }
+
+    h3.slogan {
+        font-size: 1.3rem;
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    p.info {
+        font-size: 0.8rem;
+        font-family: 'Libre Baskerville', sans-serif;
+        font-style: italic;
+        text-align: center;
+        color: #9FA4AF;
+    }
+}
+
 
 
 

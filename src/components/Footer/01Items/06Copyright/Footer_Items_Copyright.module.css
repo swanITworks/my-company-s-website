@@ -16,3 +16,12 @@
         font-size: 0.7rem;
     }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .copyright {
+        margin-top: 0rem;
+        width: 95%;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}
