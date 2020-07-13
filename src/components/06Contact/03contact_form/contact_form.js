@@ -47,10 +47,9 @@ const Form = () => {
 
   const onSubmit = (e) => {
     e.preventDefault()
-
     if (isFormValid) {
       setIsLoading(true)
-      axios.post("http://localhost:3000/msg", {
+      axios.post("http://swanitworks.com:3000/msg", {
         name: inputElements.name.value,
         email: inputElements.email.value,
         title: inputElements.subject.value,

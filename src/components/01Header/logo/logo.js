@@ -18,7 +18,7 @@ const logo = (props) => {
   return (
     <div className={classes.logoArea}>
       <Logo className={svgClassesArray.join(" ")}/>
-      <span className={classesArray.join(" ")}>Swan <span>It</span> Works.</span>
+      <span className={classesArray.join(" ")}>Swan <span>IT</span> Works.</span>
     </div>
   )
 }
