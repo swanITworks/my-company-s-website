@@ -3,10 +3,20 @@ import NavigationItems from "../navigationItems/navigationItems"
 import classes from "./sideDrawer.module.css"
 import NavItem from "../navigationItems/navigationItem/navigationItem"
 
-const sideDrawer = () => {
+const SideDrawer = (props) => {
+
+  let classesArray;
+
+  if (props.isScroll) {
+    classesArray = [classes.sideDrawerScroll]
+
+  } else {
+    classesArray = [classes.sideDrawer]
+  }
+
   return (
-    <div className={classes.sideDrawer}>
-      <ul>
+    <div className={classesArray.join(" ")}>
+      <ul className={classes.listItems}>
         <li>
           <NavItem key={1} url='/' text='HOME' isScroll={false}/>
         </li>
@@ -24,4 +34,4 @@ const sideDrawer = () => {
   )
 }
 
-export default sideDrawer;
+export default SideDrawer;
