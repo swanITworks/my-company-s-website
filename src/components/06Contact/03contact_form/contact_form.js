@@ -53,7 +53,7 @@ const Form = () => {
         name: inputElements.name.value,
         email: inputElements.email.value,
         title: inputElements.subject.value,
-        msg: inputElements.message.value,
+        message: inputElements.message.value,
         token: captcha.token,
       }).then(() => {
           setSentSuccess(true)

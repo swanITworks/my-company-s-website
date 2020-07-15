@@ -4,15 +4,15 @@ import classes from "./navigationItem.module.css"
 
 const navItem = (props) => {
   const scroll = props.isScroll
-  let classesArray = [classes.Link]
+  let classesArray = [classes.link]
+
   if (scroll){
     classesArray.push(classes.scroll)
   } else {
-    classesArray = [classes.Link]
+    classesArray = [classes.link]
   }
-
   return (
-    <Link to={props.url} className={classesArray.join(' ')} >{props.text} </Link>
+    <Link to={props.url} className={classesArray.join(' ')} style={props.mobile ? {paddingBottom: '0.5rem'} : null}>{props.text} </Link>
   )
 }
 

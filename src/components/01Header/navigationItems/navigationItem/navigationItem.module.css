@@ -1,4 +1,4 @@
-.Link {
+.link {
     color: white;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -7,7 +7,7 @@
     padding-bottom: 1.8rem;
 }
 
-.Link:hover {
+.link:hover {
     border-bottom: 4px #F6663F solid;
     border-radius: 1px;
 }
@@ -15,6 +15,7 @@
 .scroll {
     padding-bottom: 1rem;
 }
+
 
 
 
