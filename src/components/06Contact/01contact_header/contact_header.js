@@ -5,8 +5,8 @@ const ContactHeader = () => {
   return (
       <article className={classes.contactHeader}>
         <h2 className={classes.title}>CONTACT</h2>
-        <h3 className={classes.slogan}>We alway here to <span>helps you</span></h3>
-        <p className={classes.info}>Please don't hesitate to contact us, we work with micro, small and big companies. We adjust our offer to your requirements. It will be pleasure for us to can speak with you about our next project and estimate cost of it.</p>
+        <h3 className={classes.slogan}>We put <span>you first.</span></h3>
+        <p className={classes.info}>Whether it’s about an upcoming project, a quote or a query, contact us. We adjust our offers and services around you.</p>
       </article>
   )
 }

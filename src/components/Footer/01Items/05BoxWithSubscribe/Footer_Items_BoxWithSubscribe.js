@@ -41,7 +41,7 @@ const BoxWithSubscribe = () => {
     <article className={classes.subscribeBox}>
       <h4 className={classes.title}>SUBSCRIBE TO NEWSLETTER</h4>
       <div className={classes.items}>
-        <p>We'll inform you about all news from our company.</p>
+        <p>To keep in the loop, about whats happening at Swan IT Works, subscribe here.</p>
         <form onSubmit={submitHandler}>
           <input onChange={chaneHandler} value={inputValue.value} className={inputClasses.join(' ')} placeholder='Enter your email' type={"email"}/>
           {inputValue.touched && !inputValue.valid ? <div className={classes.errorInfo}>Please put correct email</div> : null }

@@ -5,7 +5,7 @@ const BoxWithLogo = () => {
   return (
     <article className={classes.Box}>
       <p className={classes.logo}>Swan IT Works.</p>
-      <p className={classes.info}>Software house with strong understanding of business processes. We produce bespoke websites, mobile apps, web apps, desktop software, etc.</p>
+      <p className={classes.info}>We are a leading software house with a solid awareness of business process. Swan IT Works produces bespoke websites, mobile apps, web apps, desktop software, etc. Tell us what you want and we will create.</p>
       <p className={classes.businessAddressTitle}>BUSINESS ADDRESS:</p>
       <p className={classes.businessAddress}><span>WM SWAN LTD</span><br/>Wrotham Road 126, NW1 9SU London, United Kingdom.</p>
       <div className={classes.businessPhoneEmail}>

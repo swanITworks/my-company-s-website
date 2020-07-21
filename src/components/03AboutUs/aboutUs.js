@@ -9,13 +9,14 @@ const AboutUs = () => {
       <article className={classes.aboutBox}>
         <div className={classes.leftSide}>
           <p className={classes.title}>ABOUT US</p>
-          <p>We are the best software house Company and innovation marketing.</p>
+          <p>We are a leading innovation marketing and software house company.</p>
         </div>
         <div className={classes.rightSide}>
-          <p>Probably already had a chance to cooperate with people from the <span>IT industry. </span>
-            We in the past also and know that mutual understanding can be difficult.
-             We are <span>business practitioners</span> Thanks that, we will take care of your needs best.</p>
-          <p className={classes.additionalText}>We are a software house but our employees also have experience in industry branches such as production, services, hotel, trade and management. Our organization employ specialists from all over the world, use modern working methods, mainly work remotely, but we can also meet at your office or in central London. Every client is welcome, works with small start ups and big enterprises.
+          <p>We at Swan IT Works know it can be tedious when cooperating gaining an agreement within the IT industry. Our diverse global team of business practitioners and specialists put <span>your</span> needs as our core <span>focus.</span> Yes, we’re a software house; however, we have diversified experience in production, services, hotel and trade management.
+          </p>
+          <p className={classes.additionalText}>
+            All of us at Swan IT Works are happy to serve your business, whether it’s a small start-up or a large enterprise.
+            Most of us are remote, although, if required we can come to you or meet in Central London. We work around you.
           </p>
         </div>
       </article>

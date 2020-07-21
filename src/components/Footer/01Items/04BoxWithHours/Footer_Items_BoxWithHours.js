@@ -6,7 +6,7 @@ const BoxWithHours = () => {
     <article className={classes.hoursBox}>
       <h4 className={classes.title}>OPENING HOURS</h4>
       <div className={classes.items}>
-        <p>We work 24 hours a day but in the hours below you are guaranteed that we will answer the phone or call you back. All hours refer to the UTC / GMT time zone</p>
+        <p>Our dedicated team works 24 hours around the clock. However, if you wish to speak to use, these are the hours we’re available by phone. All hours refer to the UTC/GMT time zone</p>
         <div className={classes.row}>
           <p>MON - THURS:</p>
           <p>7.00 AM - 3.00 PM</p>

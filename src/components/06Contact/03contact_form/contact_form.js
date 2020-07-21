@@ -208,8 +208,7 @@ const Form = () => {
     <article className={classes.form}>
       <div className={classes.formHeader}>
         <h3 className={classes.slogan}>Get in touch with us</h3>
-        <p className={classes.info}>Please fill the form below and describe your needs, we will answer in 24h.
-        </p>
+        <p className={classes.info}>We aim to respond to any correspondence within 24 hours, just fill in your details below.</p>
       </div>
       {sendingForm()}
     </article>

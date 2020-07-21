@@ -5,8 +5,8 @@ const whatWeDo_Header = () => {
   return (
     <article className={classes.whatWeDoHeader}>
       <h2 className={classes.title}>WHAT WE DO</h2>
-      <h3 className={classes.slogan}>Take the world’s <span>best services</span> For you</h3>
-      <p className={classes.info}>We produce bespoke software. We can do everything and meet your every need. From a website to complicated applications based on business intelligence. Develop software for all devices and operating systems.
+      <h3 className={classes.slogan}>Be a prime focus of a leading <span>global service.</span></h3>
+      <p className={classes.info}>If you need bespoke software, Swan IT Works have you covered. We work meticulously on websites to complicated applications based on business intelligence. Our developer’s skillsets are unlimited building software for all devices and operating systems.
       </p>
     </article>
   )

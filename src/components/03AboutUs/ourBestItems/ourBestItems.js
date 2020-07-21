@@ -7,18 +7,18 @@ const ourBestItems = () => {
   const aboutBestClasses = [classes.aboutBox, classes.aboutBests]
   const bestData = [{
     number: "01.",
-    title: "Best understanding of business.",
-    text: "We are not just programmers, understand your needs like no other because we practice business ourselves.",
+    title: "Implement what we preach.",
+    text: "We are more than digesters of code, we practice business ourselves.",
   },
     {
       number: "02.",
-      title: "Best innovative technologies.",
-      text: "When others are just learning, we use only the latest technologies. Thanks to which our applications are the fastest.",
+      title: "Use cutting edge technology.",
+      text: "Latest technologies ensure our applications are the most efficient and fastest.",
     },
     {
       number: "03.",
-      title: "Best flexibility and speed of action.",
-      text: "Not only our software is fast but we also work quickly. We don't want to be a large corporation, which makes us flexible.",
+      title: "Focus on quality yet deliver fast.",
+      text: "We’re a flexible and quick workforce, as we don’t want to be a large corporation.",
     },
   ]
 

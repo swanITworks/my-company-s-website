@@ -7,51 +7,51 @@ import Dots from "./03WhatWeDo_Dots/dots"
 const items = [
   {
     title: "Mobile Apps",
-    info: "Provide mobile apps for Android and iOS operating system. Can design everything you need. ",
+    info: "Any design you wish we can provide for Android or iOS mobile apps.",
   },
   {
     title: "Web Apps",
-    info: "Our systems support all modern browsers. Imagine something and we'll take it to your card",
+    info: "Using modern browsers, we can design anything, just tell us what you want for your web app.",
   },
   {
     title: "Websites",
-    info: "Blogs, companies websites, product configurators, price comparison systems... we can do it all",
+    info: "Building blogs, company websites, product configurators and price comparison systems mean our skills are limited.",
   },
   {
     title: "E-commerce",
-    info: "We can move your selling to Internet. Online shops have been our passion for ten years",
+    info: "We are experienced facilitators in moving shops online, it’s been our passion for the last ten years.",
   },
   {
     title: "ERP Systems",
-    info: "This is our specialty. We know how hard is maneging business, our software simplify it.",
+    info: "Simplifying software is our speciality; we know how hard it is to manage a business.",
   },
   {
     title: "CMS Systems",
-    info: "We can build from scratch the content management systems regarding your needs and assumptions.",
+    info: "Based on your needs and assumptions, we can build content management systems from scratch.",
   },
   {
     title: "CRM Software",
-    info: "Everybody knows how customer relationship management is important, our company can help in it.",
+    info: "All of us know how customer relationship management is vital to survive; we can help you.",
   },
   {
     title: "B2B Systems",
-    info: "Your clients can order products or service directly without time-consuming calls or emails.",
+    info: "Save more time for your company by allowing clients to order products or services direct.",
   },
   {
     title: "Bespoke Software",
-    info: "Maybe have idea for your own software, we can build it for you from scratch.",
+    info: "We can build software based on your ideas.",
   },
   {
     title: "Automation processes",
-    info: "Automatic invoice delivery, newsletter self sending to all your clients, etc. We can do it to save your money.",
+    info: "To save you money, we automate invoice delivery and newsletter self sending to all your clients.",
   },
   {
     title: "Integration of systems",
-    info: "We can connect few systems to work together to save your time and eliminate unnecessary work",
+    info: "We synchronise systems to save you time and eliminate unnecessary work.",
   },
   {
     title: "IT support",
-    info: "We can help you in many IT processes. Just ask and we quote the best service.",
+    info: "Our IT help is diversified, ask us, and we can provide a quote.",
   }
 ]
 
