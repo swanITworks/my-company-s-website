@@ -1,12 +1,10 @@
 .slider {
-    background-size: cover;
-    background-position: bottom;
-    background-color: #171717;
     height: 100vh;
-    color: black;
+    background-color: black;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 article.main {

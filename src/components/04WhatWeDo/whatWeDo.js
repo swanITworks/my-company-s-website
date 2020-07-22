@@ -7,7 +7,7 @@ import Dots from "./03WhatWeDo_Dots/dots"
 const items = [
   {
     title: "Mobile Apps",
-    info: "Any design you wish we can provide for Android or iOS mobile apps.",
+    info: "Tell us any design that you wish for, and we can provide it for your Android or iOS mobile app.",
   },
   {
     title: "Web Apps",
@@ -15,15 +15,15 @@ const items = [
   },
   {
     title: "Websites",
-    info: "Building blogs, company websites, product configurators and price comparison systems mean our skills are limited.",
+    info: "We can build blogs, company websites, product configurators, and price comparison systems.",
   },
   {
     title: "E-commerce",
-    info: "We are experienced facilitators in moving shops online, it’s been our passion for the last ten years.",
+    info: "We are experienced in moving commerce online; it’s been our passion for the last ten years.",
   },
   {
     title: "ERP Systems",
-    info: "Simplifying software is our speciality; we know how hard it is to manage a business.",
+    info: "Simplifying software is our primary speciality; as we know how hard it is to manage a business.",
   },
   {
     title: "CMS Systems",
@@ -35,23 +35,23 @@ const items = [
   },
   {
     title: "B2B Systems",
-    info: "Save more time for your company by allowing clients to order products or services direct.",
+    info: "Save more time for your company by allowing clients to order products or services directly.",
   },
   {
     title: "Bespoke Software",
-    info: "We can build software based on your ideas.",
+    info: "Share with us your exciting software ideas, which we can custom build for you from scratch.",
   },
   {
     title: "Automation processes",
-    info: "To save you money, we automate invoice delivery and newsletter self sending to all your clients.",
+    info: "To save money, we automate invoice delivery and newsletter self sending to all your clients.",
   },
   {
     title: "Integration of systems",
-    info: "We synchronise systems to save you time and eliminate unnecessary work.",
+    info: "We synchronise systems to work together and save you time by eliminating unnecessary work.",
   },
   {
     title: "IT support",
-    info: "Our IT help is diversified, ask us, and we can provide a quote.",
+    info: "Our IT help is diverse, ask us, and we can provide our best quote for the service required.",
   }
 ]
 
