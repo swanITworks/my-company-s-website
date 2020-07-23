@@ -8,38 +8,102 @@ import imageSecond from "../../images/2.jpg"
 import imageThird from "../../images/3.jpg"
 import imageFourth from "../../images/4.jpg"
 
-const employeesData = [
-  {
-    name: "Konrad Olson",
-    image: imageFirst,
-    title: "SELS EXECUTIVE UK",
-    info: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
-    skills: [{ marketing: 67 }, { communication: 54 }, { smailing: 79 }, { languages: 89 }],
+import { graphql, useStaticQuery } from "gatsby"
+
+const getImages = graphql`
+{
+  adrian:file(relativePath: {eq: "ourTeam/adrian.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
   },
-  {
-    name: "Jesica Brown",
-    image: imageSecond,
-    title: "BACK END DEVELOPER",
-    info: "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-    skills: [{ Python: 60 }, { Databases: 85 }, { Linux: 64 }, { happinesae: 79 }],
+  konrad:file(relativePath: {eq: "ourTeam/konrad.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
   },
-  {
-    name: "Crystine Wild",
-    image: imageThird,
-    title: ".NET DEVELOPER",
-    info: "Making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text",
-    skills: [{ "C#": 85 }, { ".NET": 78 }, { "Java": 65 }, { "SQL:": 89 }],
+  jessica:file(relativePath: {eq: "ourTeam/jessica.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
   },
-  {
-    name: "Jevgen Semonov",
-    image: imageFourth,
-    title: "FRONT END DEVELOPER",
-    info: "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-    skills: [{ "Java Script": 99 }, { "Adobe Ilustrator": 54 }, { "React JS": 45 }, { "CSS": 70 }],
+  chrystina:file(relativePath: {eq: "ourTeam/chrystina.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
   },
-]
+  jevgeni:file(relativePath: {eq: "ourTeam/jevgeni.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  },
+  michal:file(relativePath: {eq: "ourTeam/michal.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  },
+  
+}
+`
 
 const OurTeam = () => {
+  const data = useStaticQuery(getImages)
+  const employeesData = [
+    {
+      name: "Adrian Sobolewski",
+      image: data.adrian.childImageSharp.fluid,
+      title: "SALES EXECUTIVE",
+      info: "Adrian will guarantee that you will be served at the highest level. He will help develop your ideas and match the company's offer to your needs.",
+      skills: [{ marketing: 67 }, { communication: 93 }, { 'keep smiling': 79 }, { languages: 89 }],
+    },
+    {
+      name: "Konrad Olson",
+      image: data.konrad.childImageSharp.fluid,
+      title: "PYTHON DEVELOPER",
+      info: "Clean code lover, every bit matters to him. In a previous incarnation, he probably was a snake because Python has no secrets from him. In his spare time he is a fan of various types of beer and rock and roll.",
+      skills: [{ Django: 87 }, { Databases: 64 }, { Scrum: 79 }, { "clean code": 89 }],
+    },
+    {
+      name: "Jessica Brown",
+      image: data.jessica.childImageSharp.fluid,
+      title: "BACK END DEVELOPER",
+      info: "Linux enthusiast, knows all commands by heart. He moves around the SQL database with deadly accuracy. No data is foreign to her, give her some characteristics and she will calculate the size of your shoe.",
+      skills: [{ Java: 84 }, { SQL: 85 }, { Linux: 74 }, { diligence: 99 }],
+    },
+    {
+      name: "Chrystina Wild",
+      image: data.chrystina.childImageSharp.fluid,
+      title: ".NET DEVELOPER",
+      info: "She is an open mind person, software architecture is her specialty. Can predict the future and direction of software development. She loves horse riding and dreams of her own stud.",
+      skills: [{ "C#": 85 }, { ".NET": 78 }, { "Java": 65 }, { "software architecture": 89 }],
+    },
+    {
+      name: "Jevgeni Simonov",
+      image: data.jevgeni.childImageSharp.fluid,
+      title: "FRONT END DEVELOPER",
+      info: "He likes vanilla javascript, preferably every piece of code written by himself. He knows design and user experience. Sometimes he can draw by hand too.",
+      skills: [{ "Java Script": 99 }, { "Adobe Ilustrator": 54 }, { "React JS": 45 }, { "CSS": 70 }],
+    },
+    {
+      name: "Michal Labedz",
+      image: data.michal.childImageSharp.fluid,
+      title: "JUNIOR FULL STACK DEVELOPER",
+      info: "Ambitious, highly motivated to achieve goals. He has experience in business processes. Consistently increases his knowledge in programming. In his spare time he loves to sail the seas and oceans.",
+      skills: [{ "React JS": 75 }, { "Node JS": 54 }, { "MongoDB": 45 }, { "HTML/CSS": 90 }],
+    },
+  ]
 
   const [progressValues, setProgressValues] = useState([])
   const [person, setPerson] = useState(0)

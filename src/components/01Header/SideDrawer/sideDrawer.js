@@ -1,19 +1,15 @@
 import React from "react"
-import NavigationItems from "../navigationItems/navigationItems"
 import classes from "./sideDrawer.module.css"
 import NavItem from "../navigationItems/navigationItem/navigationItem"
 
 const SideDrawer = (props) => {
-
-  let classesArray;
-
+  let classesArray
   if (props.isScroll) {
     classesArray = [classes.sideDrawerScroll]
 
   } else {
     classesArray = [classes.sideDrawer]
   }
-
   return (
     <div className={classesArray.join(" ")}>
       <ul className={classes.listItems}>
@@ -34,4 +30,4 @@ const SideDrawer = (props) => {
   )
 }
 
-export default SideDrawer;
+export default SideDrawer

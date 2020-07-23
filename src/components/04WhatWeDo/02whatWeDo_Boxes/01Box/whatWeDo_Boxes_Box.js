@@ -1,89 +1,170 @@
 import React from "react"
 import classes from "./whateWeDo_Boxes_Box.module.css"
-import mobileApps from "../../../../images/whatWeDo/mobileApps.jpg"
-import webApps from "../../../../images/whatWeDo/webApps.jpg"
-import websites from "../../../../images/whatWeDo/websites.jpg"
-import erp from "../../../../images/whatWeDo/erp.jpg"
-import ecommerce from "../../../../images/whatWeDo/ecommerce.jpg"
-import cms from "../../../../images/whatWeDo/cms.jpg"
-import crm from "../../../../images/whatWeDo/crm.jpg"
-import b2b from "../../../../images/whatWeDo/b2b.jpg"
-import bespoke from "../../../../images/whatWeDo/bespoke.jpg"
-import automation from "../../../../images/whatWeDo/autom.jpg"
-import integrations from "../../../../images/whatWeDo/integrations.jpg"
-import support from "../../../../images/whatWeDo/itsupport.jpg"
+import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 
+const getImages = graphql`
+{
+  mobileApps:file(relativePath: {eq: "whatWeDo/mobileApps.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  webApps:file(relativePath: {eq: "whatWeDo/webApps.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }  
+  websites:file(relativePath: {eq: "whatWeDo/websites.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  erp:file(relativePath: {eq: "whatWeDo/erp.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  ecommerce:file(relativePath: {eq: "whatWeDo/ecommerce.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  } 
+  cms:file(relativePath: {eq: "whatWeDo/cms.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  crm:file(relativePath: {eq: "whatWeDo/crm.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  b2b:file(relativePath: {eq: "whatWeDo/b2b.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  bespoke:file(relativePath: {eq: "whatWeDo/bespoke.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  automation:file(relativePath: {eq: "whatWeDo/autom.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  integrations:file(relativePath: {eq: "whatWeDo/integrations.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  support:file(relativePath: {eq: "whatWeDo/itsupport.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`
 
-const whatWeDo_Boxes_Box = (props) => {
+const WhatWeDo_Boxes_Box = (props) => {
   const title = props.title
   const info = props.info
-  const even = props.even;
+  const even = props.even
+
+  const data = useStaticQuery(getImages)
 
   const imageStyles = {
     height: "200px",
     backgroundPosition: "center",
   }
 
+  let image
+
   switch (title) {
     case "Mobile Apps":
-      imageStyles.backgroundImage = `url(${mobileApps})`
-      break;
+      image = <Img fluid={data.mobileApps.childImageSharp.fluid}/>
+      break
     case "Web Apps":
-      imageStyles.backgroundImage = `url(${webApps})`
-      break;
+      image = <Img fluid={data.webApps.childImageSharp.fluid}/>
+      break
     case "Websites":
-      imageStyles.backgroundImage = `url(${websites})`
-      break;
-    case "ERP Systems":
-      imageStyles.backgroundImage = `url(${erp})`
-      break;
+      image = <Img fluid={data.websites.childImageSharp.fluid}/>
+      break
     case "E-commerce":
-      imageStyles.backgroundImage = `url(${ecommerce})`
-      break;
-      case "CMS Systems":
-      imageStyles.backgroundImage = `url(${cms})`
-      break;
-      case "CRM Software":
-      imageStyles.backgroundImage = `url(${crm})`
-      break;
-      case "B2B Systems":
-      imageStyles.backgroundImage = `url(${b2b})`
-      break;
-      case "Bespoke Software":
-      imageStyles.backgroundImage = `url(${bespoke})`
-      break;
-      case "Automation processes":
-      imageStyles.backgroundImage = `url(${automation})`
-      break;
-      case "Integration of systems":
-      imageStyles.backgroundImage = `url(${integrations})`
-      break;
-      case "IT support":
-      imageStyles.backgroundImage = `url(${support})`
-      break;
+      image = <Img fluid={data.ecommerce.childImageSharp.fluid}/>
+      break
+    case "ERP Systems":
+      image = <Img fluid={data.erp.childImageSharp.fluid}/>
+      break
+    case "CRM Software":
+      image = <Img fluid={data.crm.childImageSharp.fluid}/>
+      break
+    case "B2B Systems":
+      image = <Img fluid={data.b2b.childImageSharp.fluid}/>
+      break
+    case "Bespoke Software":
+      image = <Img fluid={data.bespoke.childImageSharp.fluid}/>
+      break
+    case "Automation processes":
+      image = <Img fluid={data.automation.childImageSharp.fluid}/>
+      break
+    case "Integration of systems":
+      image = <Img fluid={data.integrations.childImageSharp.fluid}/>
+      break
+    case "IT support":
+      image = <Img fluid={data.support.childImageSharp.fluid}/>
+      break
     default:
-      imageStyles.backgroundImage = `url(${mobileApps})`
-      break;
+      image = <Img fluid={data.websites.childImageSharp.fluid}/>
+      break
   }
 
   let classesArray = [classes.whatWeDoBoxes_Box]
 
-  if (even){
+  if (even) {
     classesArray.push(classes.hide)
   } else {
     classesArray = [classes.whatWeDoBoxes_Box]
   }
 
   return (
-    <article className={classesArray.join(' ')}>
+    <article className={classesArray.join(" ")}>
       <div className={classes.top}>
-        <div style={imageStyles}/>
+        <div style={imageStyles}>
+          {image}
+        </div>
       </div>
-      <div className={even !== true ? classes.bottomEven: classes.bottom}>
-        <header className={even !== true ? classes.titleEven: classes.title}>
+      <div className={even !== true ? classes.bottomEven : classes.bottom}>
+        <header className={even !== true ? classes.titleEven : classes.title}>
           {title}
         </header>
-        <p className={even !== true ? classes.infoEven: classes.info}>
+        <p className={even !== true ? classes.infoEven : classes.info}>
           {info}
         </p>
         {/*<Link to={props.url} className={even !== true ? classes.LinkEven: classes.Link}>READ MORE</Link>*/}
@@ -92,4 +173,4 @@ const whatWeDo_Boxes_Box = (props) => {
   )
 }
 
-export default whatWeDo_Boxes_Box
+export default WhatWeDo_Boxes_Box
