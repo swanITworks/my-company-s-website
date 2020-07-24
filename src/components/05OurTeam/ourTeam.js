@@ -3,10 +3,6 @@ import classes from "./ourTeam.module.css"
 import OurTeamHeader from "./01ourTeam_Header/ourTeam_Header"
 import OurTeamBoxes from "./02ourTeam_Boxes/ourTeam_Boxes"
 import OurTeamSkills from "./03ourTeam_Skills/ourTeam_Skills"
-import imageFirst from "../../images/1.jpg"
-import imageSecond from "../../images/2.jpg"
-import imageThird from "../../images/3.jpg"
-import imageFourth from "../../images/4.jpg"
 
 import { graphql, useStaticQuery } from "gatsby"
 
