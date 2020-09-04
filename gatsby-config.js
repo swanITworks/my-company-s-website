@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -61,5 +62,13 @@ module.exports = {
         path: path.join(__dirname,`src`,`images`),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `translations`,
+        path: path.join(__dirname,`config`,`translations`),
+      },
+    },
+    `gatsby-transformer-json`
   ],
 }

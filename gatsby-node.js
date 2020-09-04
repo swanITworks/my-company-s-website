@@ -67,3 +67,5 @@ exports.onCreateNode = ({ node, actions }) => {
     createNodeField({ node, name: `isDefault`, value: isDefault })
   }
 }
+
+

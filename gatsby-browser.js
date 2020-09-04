@@ -1,2 +1,4 @@
-require("typeface-playfair-display");
-require("typeface-open-sans");
+import CustomLayout from "./wrapPageElement"
+
+
+export const wrapPageElement = CustomLayout

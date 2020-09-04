@@ -1,14 +1,18 @@
 import React from "react"
 import classes from "./aboutUs.module.css"
 import OurBestItems from "./ourBestItems/ourBestItems"
+import useTranslations from "../useTranslations.js"
 
 const AboutUs = () => {
+
+  const { about } = useTranslations()
 
   return (
     <section id={'about'} className={classes.aboutUs}>
       <article className={classes.aboutBox}>
         <div className={classes.leftSide}>
           <p className={classes.title}>ABOUT US</p>
+  <p>{about}</p>
           <p>We are a leading innovation marketing and software house company.</p>
         </div>
         <div className={classes.rightSide}>
