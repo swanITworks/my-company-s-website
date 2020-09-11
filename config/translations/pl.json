@@ -1,0 +1,10 @@
+{   
+  "priority": "C",
+  "links": {
+    "home": "start",
+    "about": "o nas",
+    "whatWeDo": "co robimy",
+    "contact": "kontakt"
+  },
+  "about": "Jestesmy zajebisci."
+  }

@@ -1,0 +1,1 @@
+{namesOfLang.map((item,index) => <Link to={'/' + (item.node.name === 'en' ? '' : item.node.name)} key={4 + index + 1} text={item.node.name}><LangsItem lang={item.node.name}/>{item.node.name}</Link>)}

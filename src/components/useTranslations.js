@@ -32,6 +32,12 @@ const query = graphql`
           name
           translations: childTranslationsJson {
             about
+            links {
+              home
+                about
+                whatWeDo
+                contact
+            }
           }
         }
       }

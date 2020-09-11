@@ -1,3 +1,10 @@
-{
-    "about": "Wir sind ein führendes Innovationsmarketing- und Softwarehausunternehmen."
+{   
+  "priority": "B",
+  "links": {
+    "home": "start",
+    "about": "uber uns",
+    "whatWeDo": "was machts wir",
+    "contact": "kontakt"
+  },
+  "about": "Wir sind ein führendes Innovationsmarketing- und Softwarehausunternehmen."
   }

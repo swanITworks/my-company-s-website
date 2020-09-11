@@ -1,3 +1,10 @@
 {
-    "about": "We are a leading innovation marketing and software house company."
+  "priority": "A",
+  "links": {
+    "home": "home",
+    "about": "about",
+    "whatWeDo": "what we do",
+    "contact": "contact"
+  },
+  "about": "We are a leading innovation marketing and software house company."
   }
