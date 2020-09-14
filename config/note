@@ -10,13 +10,14 @@
 
   },
 
-  "slider":{
-    "buttons":{
-      "next":"next",
-      "prev":"prev"
+  "slider":[
 
-    },
-    "items": [
+    {"buttons":[
+      {"next": "next"}
+    ]
+  },
+  {
+    "items:":[
       {
         "introduction": "Stick to the essentials.",
         "mainTitleStart": "Make your",
@@ -40,7 +41,7 @@
         "mainTitleSpan": "big money",
         "mainTitleEnd": "with us.",
         "slogan": "Small or large business, we don’t discriminate.",
-        "onClick": "/whatwedo#whatWeDo"
+        "onClick": "/whatwedo#whatWeDo",
   
       },
       {
@@ -50,10 +51,11 @@
         "mainTitleEnd": "control.",
         "slogan": "All your IT needs can be covered by us.",
         "onClick": "/contact#contact"
-      }
+      },
+      
     ]
   },
-
-  "about": "We are a leading innovation marketing and software house company."
-
+  
+  {"about": "We are a leading innovation marketing and software house company."}
+  ]
 }

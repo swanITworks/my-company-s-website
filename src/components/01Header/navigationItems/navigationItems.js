@@ -1,11 +1,11 @@
-import React from "react"
+import React,{ useState } from "react"
 import NavItem from "./navigationItem/navigationItem"
 import classes from './navigationItems.module.css'
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from 'gatsby'
 import { LocaleContext } from "../../../layouts/layout"
 import useTranslations from "../../useTranslations.js"
-import LangsItem from "./langsItem/langsItem"
+import LangsFlags from "./langsFlags/langsFlags"
 
 const langs = graphql`
   {
@@ -30,6 +30,8 @@ const NavigationItems = ( props ) => {
 
   const { locale } = React.useContext(LocaleContext);
 
+  const [ mouseOn, setMouseOn ] = useState( false );
+
   return (
     <nav className={classes.nav}>
       <ul>
@@ -45,7 +47,13 @@ const NavigationItems = ( props ) => {
         <li>
           <NavItem key={4} to={'/contact'} text={contact} isScroll={scroll} mobile={false}/>
         </li>
-          {namesOfLang.map((item,index) =><li><Link style={{margin:'10px'}} to={'/' + (item.node.name === 'en' ? '' : item.node.name)} key={4 + index + 1} text={item.node.name}><span>{item.node.name}</span></Link></li>)}
+        <li style={{margin:'0px', transform: 'translateY(8px)'}} onMouseEnter={()=>{
+            setMouseOn(true);
+        }} onMouseLeave={()=>{
+          setMouseOn(false);
+        }}>
+          <LangsFlags items={mouseOn ? namesOfLang : [{node:{name:locale}}]}/>
+        </li>
         </ul>
     </nav>
   )
