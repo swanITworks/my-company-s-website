@@ -1,61 +1,57 @@
-{
-
-  "priority": "A",
-  "links":{
-
-    "home": "home",
-    "about": "about",
-    "whatWeDo": "what we do",
-    "contact": "contact"
-
-  },
-
-  "slider":[
-
-    {"buttons":[
-      {"next": "next"}
+"whatWeDo": {
+    "title": "Co Robimy",
+    "mainSlogan": {
+      "slogan": "Be a prime focus of a leading",
+      "markedSlogan": "global service."
+    },
+    "items": [
+      {
+        "title": "Mobile Apps",
+        "info": "Tell us any design that you wish for, and we can provide it for your Android or iOS mobile app.",
+      },
+      {
+        "title": "Web Apps",
+        "info": "Using modern browsers, we can design anything, just tell us what you want for your web app.",
+      },
+      {
+        "title": "Websites",
+        "info": "We can build blogs, company websites, product configurators, and price comparison systems.",
+      },
+      {
+        "title": "E-commerce",
+        "info": "We are experienced in moving commerce online; it’s been our passion for the last ten years.",
+      },
+      {
+        "title": "ERP Systems",
+        "info": "Simplifying software is our primary speciality; as we know how hard it is to manage a business.",
+      },
+      {
+        "title": "CMS Systems",
+        "info": "Based on your needs and assumptions, we can build content management systems from scratch.",
+      },
+      {
+        "title": "CRM Software",
+        "info": "All of us know how customer relationship management is vital to survive; we can help you.",
+      },
+      {
+        "title": "B2B Systems",
+        "info": "Save more time for your company by allowing clients to order products or services directly.",
+      },
+      {
+        "title": "Bespoke Software",
+        "info": "Share with us your exciting software ideas, which we can custom build for you from scratch.",
+      },
+      {
+        "title": "Automation processes",
+        "info": "To save money, we automate invoice delivery and newsletter self sending to all your clients.",
+      },
+      {
+        "title": "Integration of systems",
+        "info": "We synchronise systems to work together and save you time by eliminating unnecessary work.",
+      },
+      {
+        "title": "IT support",
+        "info": "Our IT help is diverse, ask us, and we can provide our best quote for the service required.",
+      }
     ]
-  },
-  {
-    "items:":[
-      {
-        "introduction": "Stick to the essentials.",
-        "mainTitleStart": "Make your",
-        "mainTitleSpan": "business",
-        "mainTitleEnd": "flourish.",
-        "slogan": "Just tell us what and we will build your bespoke software.",
-        "onClick": "/#about"
-      },
-      {
-        "introduction": "Code craftsmen.",
-        "mainTitleStart": "We built the worlds",
-        "mainTitleSpan": "best team",
-        "mainTitleEnd": "for you.",
-        "slogan": "Collaborate with us and be surprised at what can be accomplished.",
-        "onClick": "/about#ourTeam",
-        "marginTop": "6rem"
-      },
-      {
-        "introduction": "Your business.",
-        "mainTitleStart": "Can earn",
-        "mainTitleSpan": "big money",
-        "mainTitleEnd": "with us.",
-        "slogan": "Small or large business, we don’t discriminate.",
-        "onClick": "/whatwedo#whatWeDo",
-  
-      },
-      {
-        "introduction": "Time is precious.",
-        "mainTitleStart": "Contact us and",
-        "mainTitleSpan": "take back",
-        "mainTitleEnd": "control.",
-        "slogan": "All your IT needs can be covered by us.",
-        "onClick": "/contact#contact"
-      },
-      
-    ]
-  },
-  
-  {"about": "We are a leading innovation marketing and software house company."}
-  ]
-}
+  }

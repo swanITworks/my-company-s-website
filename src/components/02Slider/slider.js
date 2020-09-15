@@ -5,8 +5,10 @@ import SliderButtonMobile from "./sliderButtonMobile/sliderButtonMobile"
 import ActionButton from "../../UI/actionButton/actionButton"
 import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
+import useTranslations from "../useTranslations.js"
 
-const getImages = graphql`
+  
+const getData = graphql`
 {
   fluid1:file(relativePath: {eq: "slider/slider1.jpg"}) {
     childImageSharp {
@@ -36,50 +38,33 @@ const getImages = graphql`
       }
     }
   }
+  translationsJson {
+    slider {
+      items {
+        introduction
+        mainTitleStart
+        mainTitleSpan
+        mainTitleEnd
+        slogan
+        onClick
+        marginTop
+      }
+    }
+  }
 }
 `
 
 const Slider = (props) => {
+  
   const [chosenSlider, setChosenSlider] = useState(props.selected || 0)
-  const data = useStaticQuery(getImages)
+  const data = useStaticQuery(getData)
+  const { translationsJson: { slider: { items :sliders } } } = data
   const images = Object.keys(data)
-  const sliders = [
-    {
-      introduction: "Stick to the essentials.",
-      mainTitleStart: "Make your",
-      mainTitleSpan: "business",
-      mainTitleEnd: "flourish.",
-      slogan: "Just tell us what and we will build your bespoke software.",
-      onClick: "/#about",
-    },
-    {
-      introduction: "Code craftsmen.",
-      mainTitleStart: "We built the worlds",
-      mainTitleSpan: "best team",
-      mainTitleEnd: "for you.",
-      slogan: "Collaborate with us and be surprised at what can be accomplished.",
-      onClick: "/about#ourTeam",
-      marginTop: "6rem",
-    },
-    {
-      introduction: "Your business.",
-      mainTitleStart: "Can earn",
-      mainTitleSpan: "big money",
-      mainTitleEnd: "with us.",
-      slogan: "Small or large business, we don’t discriminate.",
-      onClick: "/whatwedo#whatWeDo",
-
-    },
-    {
-      introduction: "Time is precious.",
-      mainTitleStart: "Contact us and",
-      mainTitleSpan: "take back",
-      mainTitleEnd: "control.",
-      slogan: "All your IT needs can be covered by us.",
-      onClick: "/contact#contact",
-    },
-  ]
-
+  const { slider: { items :sliderTranslations }} = useTranslations();
+  const { slider: { buttons:{ exploreMore, action}}} = useTranslations();
+ 
+  
+  
   const choseSliderHandler = (action) => {
     switch (action) {
       case "plus":
@@ -108,15 +93,14 @@ const Slider = (props) => {
       <SliderButton action={'minus'} click={() => choseSliderHandler("minus")}/>
       <article className={classes.main}
                style={sliders[chosenSlider].marginTop ? { marginTop: sliders[chosenSlider].marginTop } : null}>
-        <h3 className={classes.hello}>{sliders[chosenSlider].introduction}</h3>
+        <h3 className={classes.hello}>{sliderTranslations[chosenSlider].introduction}</h3>
         <h2
-          className={classes.mainSlogan}>{sliders[chosenSlider].mainTitleStart}<br/><span>{sliders[chosenSlider].mainTitleSpan}</span> {sliders[chosenSlider].mainTitleEnd}
+          className={classes.mainSlogan}>{sliderTranslations[chosenSlider].mainTitleStart}<br/><span>{sliderTranslations[chosenSlider].mainTitleSpan}</span> {sliderTranslations[chosenSlider].mainTitleEnd}
         </h2>
-        <h1 className={classes.slogan}>{sliders[chosenSlider].slogan}</h1>
+        <h1 className={classes.slogan}>{sliderTranslations[chosenSlider].slogan}</h1>
         <div>
-          <ActionButton type='transparent' text='EXPLORE MORE'
-                        onClick={sliders[chosenSlider].onClick}/><ActionButton text='CONTACT'
-                                                                               onClick={"contact#contact"}/>
+          <ActionButton type='transparent' text={exploreMore} onClick={sliderTranslations[chosenSlider].onClick}/>
+          <ActionButton text={action} to={"/contact#contact"}/>
         </div>
       </article>
       <SliderButton action={'plus'} click={() => choseSliderHandler("plus")}/>

@@ -31,12 +31,45 @@ const query = graphql`
         node {
           name
           translations: childTranslationsJson {
-            about
+            aboutUs {
+                title
+                about
+                additionalText
+                main {
+                  firstPart
+                  firstSpan
+                  secondPart
+                  secondSpan
+                  thirdPart
+                }
+                bestsData {
+                  number
+                  title
+                  text
+                }
+            }
             links {
               home
                 about
                 whatWeDo
                 contact
+            }
+            slider {
+              buttons {
+                next
+                prev
+                exploreMore
+                action
+              }
+              items {
+                introduction
+                mainTitleStart
+                mainTitleSpan
+                mainTitleEnd
+                slogan
+                onClick
+                marginTop
+              }
             }
           }
         }

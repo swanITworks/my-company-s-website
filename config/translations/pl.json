@@ -6,5 +6,85 @@
     "whatWeDo": "co robimy",
     "contact": "kontakt"
   },
-  "about": "Jestesmy zajebisci."
+  "slider":{
+    "buttons":{
+      "next":"dalej",
+      "prev":"wstecz",
+      "exploreMore":"wiecej",
+      "action":"kontakt"
+    },
+    "items": [
+      {
+        "introduction": "Skup sie na tym co najwazniejsze.",
+        "mainTitleStart": "Dzięki nam",
+        "mainTitleSpan": "twoja firma",
+        "mainTitleEnd": "rozkwitnie.",
+        "slogan": "Wystarczy, ze opowiesz nam o swoim biznesie a my storzymy oprogramowanie.",
+        "onClick": "/pl/#about"
+      },
+      {
+        "introduction": "Code craftsmen.",
+        "mainTitleStart": "We built the worlds",
+        "mainTitleSpan": "best team",
+        "mainTitleEnd": "for you.",
+        "slogan": "Collaborate with us and be surprised at what can be accomplished.",
+        "onClick": "/pl/about#ourTeam",
+        "marginTop": "6rem"
+      },
+      {
+        "introduction": "Your business.",
+        "mainTitleStart": "Can earn",
+        "mainTitleSpan": "big money",
+        "mainTitleEnd": "with us.",
+        "slogan": "Small or large business, we don’t discriminate.",
+        "onClick": "/pl/whatwedo#whatWeDo"
+  
+      },
+      {
+        "introduction": "Time is precious.",
+        "mainTitleStart": "Contact us and",
+        "mainTitleSpan": "take back",
+        "mainTitleEnd": "control.",
+        "slogan": "All your IT needs can be covered by us.",
+        "onClick": "/pl/contact#contact"
+      }
+    ]
+  },
+    "aboutUs":{
+      "title":"O nas",
+      "about":"Jesteśmy wiodącą firmą zajmującą się cyfryzacją oraz tworzeniem oprogramowania na zamówienie.",
+      "main": {
+        "firstPart": "We at Swan IT Works know it can be tedious when cooperating gaining an agreement within the IT industry. Our diverse global team of business practitioners and specialists put",
+        "firstSpan": "your",
+        "secondPart": "needs as our core",
+        "secondSpan": "focus.",
+        "thirdPart": "Yes, we’re a software house; however, we have diversified experience in production, services, hotel and trade management."
+      },
+      "additionalText": "All of us at Swan IT Works are happy to serve your business, whether it’s a small start-up or a large enterprise. Most of us are remote, although, if required we can come to you or meet in Central London. We work around you.",
+      "bestsData":[
+        {
+          "number": "01.",
+          "title": "Praktykujemy biznes",
+          "text": "We are more than digesters of code; we understand your needs like no other because we practice business."
+        },
+        {
+          "number": "02.",
+          "title": "Use cutting edge technology.",
+          "text": "To ease learning, we use the latest technology. So our applications are the most efficient and fastest."
+        },
+        {
+          "number": "03.",
+          "title": "Focus on quality yet deliver fast.",
+          "text": "Just like our software, we’re an agile and flexible workforce. We don’t want to be a large corporation."
+        }
+      ]
+  },
+    "whatWeDo": {
+      "title": "Co Robimy",
+      "mainSlogan": {
+        "slogan": "Be a prime focus of a leading",
+        "markedSlogan": "global service."
+      }
+    }
   }
+  

@@ -1,8 +1,19 @@
 import React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import classes from "./actionButton.module.css"
+import { LocaleContext } from "../../layouts/layout"
+import locales from "../../../config/i18n"
 
-const ActionButton = (props) => {
+const ActionButton = ({to,...props}) => {
+
+  const { locale } = React.useContext(LocaleContext);
+
+  const isIndex = to === `/`
+
+ const path = locales[locale].default
+    ? to
+    : `/${locales[locale].path}${isIndex ? `` : `${to}`}`
+
   if (props.type === "transparent") {
     return (
       <AnchorLink to={props.onClick} className={classes.actionButtonTransparency} stripHash>{props.text}</AnchorLink>
@@ -17,7 +28,7 @@ const ActionButton = (props) => {
     )
   } else {
     return (
-      <AnchorLink to={"/contact#contact"} className={classes.actionButton} stripHash>{props.text}</AnchorLink>
+      <AnchorLink to={path} className={classes.actionButton} stripHash>{props.text}</AnchorLink>
     )
   }
 }

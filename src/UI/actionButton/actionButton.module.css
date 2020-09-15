@@ -16,6 +16,7 @@
     text-align: center;
     line-height: 50px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -40,6 +41,7 @@
     text-align: center;
     line-height: 50px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .actionButtonTransparency:hover {
