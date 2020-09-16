@@ -56,6 +56,8 @@ const getImages = graphql`
 
 const OurTeam = () => {
   const data = useStaticQuery(getImages)
+  console.log(data);
+  console.log(Object.keys(data).find( item => item === 'adrian'));
   const employeesData = [
     {
       name: "Adrian Sobolewski",

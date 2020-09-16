@@ -3,6 +3,7 @@ import classes from "./whatWeDo.module.css"
 import Header from "./01whatWeDo_Header/whatWeDo_Header"
 import Boxes from "./02whatWeDo_Boxes/whatWeDo_Boxes"
 import Dots from "./03WhatWeDo_Dots/dots"
+import useTranslations from "../useTranslations"
 
 const items = [
   {
@@ -59,6 +60,9 @@ const WhatWeDo = () => {
 
   const [itemToShow, setItemToShow] = useState(1)
 
+  const { whatWeDo: { title, description, things, mainSlogan: { slogan, markedSlogan } } } = useTranslations()
+
+
   useEffect(() => {
     let interval = setInterval(() => {
       setItemToShow(prevState => {
@@ -91,7 +95,7 @@ const WhatWeDo = () => {
     return toShow
   }
 
-  const toShow = showBoxes(items)
+  const toShow = showBoxes(things)
 
   const changeHandler = (changing) => {
     switch (changing) {
@@ -113,7 +117,7 @@ const WhatWeDo = () => {
 
   return (
     <section id={'whatWeDo'} className={classes.whatWeDo}>
-      <Header/>
+      <Header title={title} slogan={slogan} markedSlogan={markedSlogan} description={description}/>
       <div className={classes.middleSection}>
         <div aria-label="Change service -" role='button' tabIndex="0" className={classes.buttonLeft} onClick={() => changeHandler("minus")} onKeyPress={() => changeHandler("minus")}></div>
         <Boxes showBoxes={toShow} />

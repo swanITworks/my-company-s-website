@@ -71,6 +71,18 @@ const query = graphql`
                 marginTop
               }
             }
+            whatWeDo {
+              title
+              mainSlogan {
+                slogan
+                markedSlogan
+              }
+              description
+              things {
+                title
+                info
+              }
+            }
           }
         }
       }
