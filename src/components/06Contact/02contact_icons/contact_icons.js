@@ -6,12 +6,12 @@ import classes from "./contact_icons.module.css"
 const phones = ["+44 7551 784266","+44 7902 474888 "];
 const address = ["Wrotham Road 126","London NW1 9SU"];
 const email = ["hello at swanitworks dot com"];
-const Icons = () => {
+const Icons = ( { icons }) => {
   return (
     <article className={classes.icons}>
-      <Icon title={"Phone"} info={phones} icon={"phone"}/>
-      <Icon title={"Address"} info={address} icon={"map-marked-alt"}/>
-      <Icon title={"Email"} info={email} icon={"envelope"}/>
+      <Icon title={ icons.phone } info={phones} icon={"phone"}/>
+      <Icon title={ icons.address} info={address} icon={"map-marked-alt"}/>
+      <Icon title={ icons.email } info={email} icon={"envelope"}/>
     </article>
   )
 }

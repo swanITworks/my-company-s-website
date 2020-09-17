@@ -83,6 +83,43 @@ const query = graphql`
                 info
               }
             }
+            ourTeam {
+              title
+              slogan
+              people {
+                name
+                imageName
+                title
+                info
+                skills {
+                  skillName
+                  skillValue
+                }
+              }
+            }
+            contact {
+              title
+              slogan {
+                text
+                markedText
+              }
+              icons {
+                phone
+                address
+                email
+              }
+              form {
+                title
+                description
+                placeHolders {
+                  name
+                  email
+                  subject
+                  message
+                  button
+                }
+              }
+            }
           }
         }
       }

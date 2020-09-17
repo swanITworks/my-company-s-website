@@ -8,7 +8,7 @@ import { formElements } from "./const/formElements"
 import { checkValidation } from "../../../utils/checkValidation"
 import Recaptcha from "react-recaptcha"
 
-const Form = () => {
+const Form = ( { form }) => {
   const [inputElements, setInputElements] = useState(formElements)
   const [isLoading, setIsLoading] = useState(false)
   const [isFormValid, setIsFormValid] = useState(false)
@@ -167,7 +167,6 @@ const Form = () => {
       </div>
       <div className={classes.captchaArea}>
         <div style={{marginRight: 'auto', visibility: 'hidden', width: '350px'}} className={classes.hide}>
-         chuj
         </div>
         <ActionButton onClick={onClickHandler} type={"form"} text={"SEND TO US"}/>
         <div style={{marginLeft: 'auto'}} className={classes.captchaMobile}>

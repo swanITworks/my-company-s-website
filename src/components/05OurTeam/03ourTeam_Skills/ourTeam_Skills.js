@@ -12,8 +12,8 @@ function OurTeam_Skills(props) {
     return (
       <div key={index} className={classes.skill}>
         <div className={classes.description}>
-          <div>{Object.keys(item)}</div>
-          <div>{Object.values(item)}%</div>
+          <div>{item.skillName}</div>
+          <div>{item.skillValue}%</div>
         </div>
         <div className={classes.progressBar}></div>
         <div style={{
