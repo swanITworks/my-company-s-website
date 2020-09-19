@@ -99,6 +99,7 @@ const query = graphql`
             }
             contact {
               title
+              description
               slogan {
                 text
                 markedText

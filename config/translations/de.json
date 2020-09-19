@@ -299,20 +299,20 @@
     "slogan": { "text":"Wir stellen Sie", "markedText":"an die erste Stelle." },
     "description": "Bei Swan IT Works behandeln wir jeden Kunden gleich, egal ob es sich um ein kleines, kleines oder großes Unternehmen handelt. Auch wenn es sich um ein bevorstehendes Projekt, ein Angebot oder eine Anfrage handelt, kontaktieren Sie uns. Wir passen unsere Angebote und Dienstleistungen an Sie an.",
     "icons": {
-      "phone": "phone",
-      "address": "email",
+      "phone": "Telefon",
+      "address": "Adresse",
       "email": "email"
       },
     "form": {
-    "title": "Get in touch with us",
-    "description": "We aim to respond to any correspondence within 24 hours, just fill in your details below.",
-    "placeHolders": {
-      "name": "name",
-      "email": "email",
-      "subject": "subject",
-      "message": "message",
-      "button": "sendToUs"
-      }
+      "title": "Get in touch with us",
+      "description": "Wir bemühen uns, jede Korrespondenz innerhalb von 24 Stunden zu beantworten. Geben Sie einfach Ihre Daten unten ein.",
+      "placeHolders": {
+        "name": "Ihr Name und Vorname",
+        "email": "Ihr Email",
+        "subject": "Ihr Thema",
+        "message": "Ihr Nachricht",
+        "button": "senden"
+        }
     }
   }
 }

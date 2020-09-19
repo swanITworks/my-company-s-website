@@ -88,7 +88,7 @@ const Form = ( { form }) => {
             <Input
               key={element.id}
               type={element.config.elementType}
-              name={element.id}
+              inputName={element.id}
               value={element.config.value}
               valid={element.config.valid}
               touched={element.config.touched}
@@ -144,7 +144,7 @@ const Form = ( { form }) => {
             <Input
               key={element.id}
               type={element.config.elementType}
-              name={element.id}
+              inputName={element.id}
               value={element.config.value}
               valid={element.config.valid}
               touched={element.config.touched}
@@ -206,8 +206,8 @@ const Form = ( { form }) => {
   return (
     <article className={classes.form}>
       <div className={classes.formHeader}>
-        <h3 className={classes.slogan}>Get in touch with us</h3>
-        <p className={classes.info}>We aim to respond to any correspondence within 24 hours, just fill in your details below.</p>
+      <h3 className={classes.slogan}>{ form.title }</h3>
+        <p className={classes.info}>{ form.description}</p>
       </div>
       {sendingForm()}
     </article>

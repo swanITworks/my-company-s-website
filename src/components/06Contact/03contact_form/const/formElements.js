@@ -3,7 +3,7 @@ export const formElements = {
     elementType: "input",
     elementConfig: {
       type: "text",
-      placeholder: "Your Name",
+      placeholder: "Your Name"
     },
     value: "",
     validation: {

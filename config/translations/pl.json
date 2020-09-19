@@ -303,15 +303,15 @@
         "email": "email"
         },
       "form": {
-      "title": "Get in touch with us",
-      "description": "We aim to respond to any correspondence within 24 hours, just fill in your details below.",
-      "placeHolders": {
-        "name": "name",
-        "email": "email",
-        "subject": "subject",
-        "message": "message",
-        "button": "sendToUs"
-        }
+        "title": "Get in touch with us",
+        "description": "We aim to respond to any correspondence within 24 hours, just fill in your details below.",
+        "placeHolders": {
+          "name": "Twoje imię i nazwisko",
+          "email": "Twój email",
+          "subject": "Tytuł wiadomości",
+          "message": "Wiadomość",
+          "button": "Wyślij"
+          }
       }
     }
   }

@@ -312,10 +312,10 @@
         "title": "Get in touch with us",
         "description": "We aim to respond to any correspondence within 24 hours, just fill in your details below.",
         "placeHolders": {
-          "name": "name",
-          "email": "email",
-          "subject": "subject",
-          "message": "message",
+          "name": "Your name",
+          "email": "Your email",
+          "subject": "Your subject",
+          "message": "Your message",
           "button": "sendToUs"
         }
       }
