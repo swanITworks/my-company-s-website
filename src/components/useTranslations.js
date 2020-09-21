@@ -117,8 +117,55 @@ const query = graphql`
                   email
                   subject
                   message
-                  button
                 }
+                button
+                messages {
+                  success {
+                    status
+                    info
+                  }
+                  error {
+                    status
+                    info
+                  }
+                }
+                validationInfos {
+                  value
+                  max
+                  min
+                  characters
+                  email
+                }
+              }
+            }
+            footer {
+              boxWithLogo {
+                description
+                adressTitle
+                phoneTitle
+                emailTitle
+              }
+              boxWithSiteMap {
+                title
+                home
+                aboutUs
+                whatWeDo
+                contact
+              }
+              boxWithHours {
+                title
+                description
+                monThur
+                fri
+                satSun
+                closed
+              }
+              subscribe {
+                title
+                description
+                placeholder
+                button
+                validationInfo
               }
             }
           }

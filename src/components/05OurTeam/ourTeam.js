@@ -24,40 +24,14 @@ const getImages = graphql`
 const OurTeam = () => {
   const { allFile: { nodes : peopleImages }} = useStaticQuery(getImages)
   const { ourTeam: { title, slogan, people } } = useTransltions();
-
-  console.log(peopleImages);
-
+  
   const findImage = ( name ) => {
     const person = peopleImages.find( person => person.name === name)
     return (
       person.childImageSharp.fluid
         )
   }
-
-  const employeesData = [
-    {
-      name: "Adrian Sobolewski",
-      image: findImage('adrian'),
-      title: "SALES EXECUTIVE",
-      info: "Adrian will guarantee that you will be served at the highest level. He will help develop your ideas and match the company's offer to your needs.",
-      skills: [{ marketing: 67 }, { communication: 93 }, { 'keep smiling': 79 }, { languages: 89 }],
-    },
-    {
-      name: "Konrad Olson",
-      image: findImage('adrian'),
-      title: "PYTHON DEVELOPER",
-      info: "Clean code lover, every bit matters to him. In a previous incarnation, he probably was a snake because Python has no secrets from him. In his spare time he is a fan of various types of beer and rock and roll.",
-      skills: [{ Django: 87 }, { Databases: 64 }, { Scrum: 79 }, { "clean code": 89 }],
-    },
-    {
-      name: "Konrad Olson",
-      image: findImage('adrian'),
-      title: "PYTHON DEVELOPER",
-      info: "Clean code lover, every bit matters to him. In a previous incarnation, he probably was a snake because Python has no secrets from him. In his spare time he is a fan of various types of beer and rock and roll.",
-      skills: [{ Django: 87 }, { Databases: 64 }, { Scrum: 79 }, { "clean code": 89 }],
-    },
-  ]
-
+  
   const [progressValues, setProgressValues] = useState([])
   const [person, setPerson] = useState(0)
   const [employees] = useState(people)

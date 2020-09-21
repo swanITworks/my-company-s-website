@@ -6,6 +6,7 @@
     color: #7D7D7D;
     margin-top: 0.6rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .items {
@@ -19,6 +20,7 @@
 .items a {
     color: #555555;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 @media only screen and (max-width: 600px) {

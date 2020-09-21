@@ -7,7 +7,7 @@ import locales from "../../../../../config/i18n.js"
 const NavItem = ({to,...props}) => {
   
   const { locale } = React.useContext(LocaleContext)
-  const scroll = props.isScroll
+  const scroll = props.isscroll
   let classesArray = [classes.link]
 
   if (scroll){
@@ -18,12 +18,12 @@ const NavItem = ({to,...props}) => {
 
   const isIndex = to === `/`
 
- const path = locales[locale].default
+  const path = locales[locale].default
     ? to
     : `/${locales[locale].path}${isIndex ? `` : `${to}`}`
 
   return (
-    <Link {...props} to={path} className={classesArray.join(' ')} style={props.mobile ? {paddingBottom: '0.5rem'} : null}>{props.text} </Link>
+    <Link to={path} className={classesArray.join(' ')} style={props.mobile ? {paddingBottom: '0.5rem'} : null}>{props.text} </Link>
   )
 }
 

@@ -310,9 +310,56 @@
         "name": "Ihr Name und Vorname",
         "email": "Ihr Email",
         "subject": "Ihr Thema",
-        "message": "Ihr Nachricht",
-        "button": "senden"
-        }
+        "message": "Ihr Nachricht"
+        },
+        "button": "Senden",
+        "messages": {
+          "success": {
+            "status": "Your message was sent",
+            "info": "We will answer in 24h"
+          },
+          "error": {
+            "status":"Error! Your message was not send.",
+            "info":"Please write directly on our email or call us."
+          }
+        },
+        "validationInfos":{
+          "value": "Dieser Wert ist erforderlich.",
+          "max": "Dieses Feld sollte maximal",
+          "min": "Dieses Feld sollte mindestens",
+          "characters": "Zeichen enthalten.",
+          "email": "Bitte geben Sie die richtige E-Mail-Adresse an."
+        } 
+      }
+    },
+    "footer":{
+      "boxWithLogo":{
+        "description":"Wir sind ein führendes Softwarehaus mit einem soliden Bewusstsein für Geschäftsprozesse. Swan IT Works erstellt maßgeschneiderte Websites, mobile Apps, Web-Apps, Desktop-Software usw. Sagen Sie uns, was Sie wollen, und wir erstellen.",
+        "adressTitle":"Geschäftsadresse:",
+        "phoneTitle":"Geschäftstelefon:",
+        "emailTitle":"Geschäftliche E-Mail:"
+      },
+      "boxWithSiteMap":{
+        "title":"Nützliche Links",
+        "home":"start",
+        "aboutUs":"Über uns",
+        "whatWeDo":"Was machts wir",
+        "contact":"Kontakt"
+      },
+      "boxWithHours":{
+        "title":"Öffnungszeiten",
+        "description":"Unser engagiertes Team arbeitet rund um die Uhr. Wenn Sie jedoch sprechen möchten, sind dies die Stunden, die wir telefonisch zur Verfügung haben. Alle Stunden beziehen sich auf die UTC / GMT-Zeitzone",
+        "monThur":"Mon. - Don.:",
+        "fri":"Frei.",
+        "satSun":"sat - sun:",
+        "closed":"closed"
+      },
+      "subscribe":{
+        "title":"Newsletter abonnieren",
+        "description":"Abonnieren Sie hier, um auf dem Laufenden zu bleiben, was bei Swan IT Works passiert.",
+        "placeholder":"Geben sie ihre E-Mail Adresse ein",
+        "validationInfo":"Bitte geben Sie die richtige E-Mail-Adresse ein.",
+        "button":"Abonnieren"
+      }
     }
-  }
 }

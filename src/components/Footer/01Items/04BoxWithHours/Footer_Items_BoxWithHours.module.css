@@ -8,12 +8,14 @@
     color: #9FA4AF;
     margin-bottom: 1rem;
     font-size: 0.7rem;
+    text-transform: uppercase;
 }
 
 .title {
     color: #7D7D7D;
     margin-top: 0.6rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .items {

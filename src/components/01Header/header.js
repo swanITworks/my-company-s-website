@@ -36,11 +36,11 @@ const Header = () => {
   return (
     <header id={"home"} className={classesArray.join(" ")} style={isShowSideDrawer ? {backgroundColor: '#171717'}:null}>
       <div className={classes.items}>
-        <Logo isScroll={scroll}/>
-        <NavigationItems isScroll={scroll}/>
-        <DrawerToggle onClick={showSideDrawerHandler} isScroll={scroll}/>
+        <Logo isscroll={scroll}/>
+        <NavigationItems isscroll={scroll}/>
+        <DrawerToggle onClick={showSideDrawerHandler} isscroll={scroll}/>
       </div>
-      {isShowSideDrawer ? <SideDrawer isScroll={scroll}/> : null}
+      {isShowSideDrawer ? <SideDrawer isscroll={scroll}/> : null}
     </header>
   )
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import classes from "./Footer_Items_BoxWithSubscribe.module.css"
 
 
-const BoxWithSubscribe = () => {
+const BoxWithSubscribe = ({ data: { title, description, placeholder, button, validationInfo}}) => {
 
   const inputClasses = [classes.input];
 
@@ -39,18 +39,18 @@ const BoxWithSubscribe = () => {
 
   return (
     <article className={classes.subscribeBox}>
-      <h4 className={classes.title}>SUBSCRIBE TO NEWSLETTER</h4>
+      <h4 className={classes.title}>{ title }</h4>
       <div className={classes.items}>
-        <p>To keep in the loop, about whats happening at Swan IT Works, subscribe here.</p>
+        <p>{ description }</p>
         <form onSubmit={submitHandler}>
-          <input onChange={chaneHandler} value={inputValue.value} className={inputClasses.join(' ')} placeholder='Enter your email' type={"email"}/>
-          {inputValue.touched && !inputValue.valid ? <div className={classes.errorInfo}>Please put correct email</div> : null }
+          <input onChange={chaneHandler} value={inputValue.value} className={inputClasses.join(' ')} placeholder={ placeholder } type={"email"}/>
+  {inputValue.touched && !inputValue.valid ? <div className={classes.errorInfo}>{ validationInfo }</div> : null }
           <button onClick={()=>{
             setInputValue({
               ...inputValue,
               touched: true,
             })
-          }} className={classes.subscribeButton} type='submit'>SUBSCRIBE</button>
+          }} className={classes.subscribeButton} type='submit'>{ button }</button>
         </form>
       </div>
     </article>

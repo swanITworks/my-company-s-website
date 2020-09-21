@@ -315,9 +315,56 @@
           "name": "Your name",
           "email": "Your email",
           "subject": "Your subject",
-          "message": "Your message",
-          "button": "sendToUs"
-        }
+          "message": "Your message"
+        },
+        "button": "send",
+        "messages": {
+          "success": {
+            "status": "Your message was sent",
+            "info": "We will answer in 24h"
+          },
+          "error": {
+            "status":"Error! Your message was not send.",
+            "info":"Please write directly on our email or call us."
+          }
+        },
+        "validationInfos":{
+            "value":"This value is required",
+            "max": "This field should have maximum",
+            "min": "This field should have minimum",
+            "characters": "characters",
+            "email": "Please put correct email address"
+        } 
+      }
+    },
+    "footer":{
+      "boxWithLogo":{
+        "description":"We are a leading software house with a solid awareness of business process. Swan IT Works produces bespoke websites, mobile apps, web apps, desktop software, etc. Tell us what you want and we will create.",
+        "adressTitle":"business address:",
+        "phoneTitle":"business phone:",
+        "emailTitle":"business email:"
+      },
+      "boxWithSiteMap":{
+        "title":"usefull links",
+        "home":"home",
+        "aboutUs":"about us",
+        "whatWeDo":"what we do",
+        "contact":"contact"
+      },
+      "boxWithHours":{
+        "title":"opening hours",
+        "description":"Our dedicated team works 24 hours around the clock. However, if you wish to speak to use, these are the hours we’re available by phone. All hours refer to the UTC/GMT time zone",
+        "monThur":"mon - thurs:",
+        "fri":"fri:",
+        "satSun":"sat - sun:",
+        "closed":"closed"
+      },
+      "subscribe":{
+        "title":"subscribe to newsletter",
+        "description":"To keep in the loop, about whats happening at Swan IT Works, subscribe here.",
+        "placeholder":"Enter your email",
+        "validationInfo":"Please put correct email",
+        "button":"subscribe"
       }
     }
 }

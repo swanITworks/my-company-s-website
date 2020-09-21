@@ -5,7 +5,7 @@ const DrawerToggle = (props) => {
 
   let classesArray = [classes.DrawerToggle]
 
-  if (props.isScroll) {
+  if (props.isscroll) {
     classesArray.push(classes.scroll)
   } else { classesArray = [classes.DrawerToggle] }
 

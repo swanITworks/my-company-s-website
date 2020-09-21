@@ -1,5 +1,4 @@
 import React from "react"
-import { Layout } from "../layouts/layout.js"
 import Slider from "../components/02Slider/slider"
 
 const about = () => (

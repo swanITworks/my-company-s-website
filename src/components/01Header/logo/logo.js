@@ -6,7 +6,7 @@ let classesArray = [classes.logo]
 let svgClassesArray = [classes.logoSvg];
 
 const logo = (props) => {
-  const scroll = props.isScroll
+  const scroll = props.isscroll
   if (scroll === true) {
     classesArray.push(classes.scroll)
     svgClassesArray.push(classes.scrollSVG)

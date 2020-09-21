@@ -15,6 +15,7 @@ p.logo {
 p.businessAddressTitle {
     font-size: 0.7rem;
     color: #555555;
+    text-transform: uppercase;
 }
 
 p.businessAddress{

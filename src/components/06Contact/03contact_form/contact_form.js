@@ -38,7 +38,7 @@ const Form = ( { form }) => {
         [elementId]: {
           ...inputElements[elementId],
           value: event.target.value,
-          valid: checkValidation(event.target.value, inputElements[elementId].validation),
+          valid: checkValidation(event.target.value, inputElements[elementId].validation, form.validationInfos),
           touched: true,
         },
       },
@@ -168,7 +168,7 @@ const Form = ( { form }) => {
       <div className={classes.captchaArea}>
         <div style={{marginRight: 'auto', visibility: 'hidden', width: '350px'}} className={classes.hide}>
         </div>
-        <ActionButton onClick={onClickHandler} type={"form"} text={"SEND TO US"}/>
+        <ActionButton onClick={onClickHandler} type={"form"} text={ form.button }/>
         <div style={{marginLeft: 'auto'}} className={classes.captchaMobile}>
           <Recaptcha render='explicit' onloadCallback={console.log.bind(this, "recaptcha loaded")} sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
                      verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
@@ -180,15 +180,15 @@ const Form = ( { form }) => {
 
   const success = (
     <div className={classes.successMessage}>
-      <p>Your message was sent</p>
-      <p style={{ marginTop: "2rem" }}>We will answer in 24h</p>
+      <p>{form.messages.success.status}</p>
+      <p style={{ marginTop: "2rem" }}>{form.messages.success.info}</p>
     </div>
   )
 
   const error = (
     <div className={classes.errorMessage}>
-      <p>Error! Your message was not send.</p>
-      <p>Please write directly on our email or call us.</p>
+      <p>{form.messages.error.status}</p>
+      <p>{form.messages.error.info}</p>
     </div>
   )
 

@@ -309,9 +309,56 @@
           "name": "Twoje imię i nazwisko",
           "email": "Twój email",
           "subject": "Tytuł wiadomości",
-          "message": "Wiadomość",
-          "button": "Wyślij"
+          "message": "Wiadomość"
+          },
+        "button": "Wyślij",
+        "messages": {
+          "success": {
+            "status": "Your message was sent",
+            "info": "We will answer in 24h"
+          },
+          "error": {
+            "status":"Error! Your message was not send.",
+            "info":"Please write directly on our email or call us."
           }
+        },
+        "validationInfos":{
+          "value":"To pole jest wymagane.",
+          "max": "To pole moze miec maksimum",
+          "min": "To pole moze miec minimum",
+          "characters": "znaków.",
+          "email": "Prosze podaj poprawny adres email."
+      } 
+      }
+    },
+    "footer":{
+      "boxWithLogo":{
+        "description":"We are a leading software house with a solid awareness of business process. Swan IT Works produces bespoke websites, mobile apps, web apps, desktop software, etc. Tell us what you want and we will create.",
+        "adressTitle":"business address:",
+        "phoneTitle":"business phone:",
+        "emailTitle":"business email:"
+      },
+      "boxWithSiteMap":{
+        "title":"przydatne linki",
+        "home":"start",
+        "aboutUs":"o nas",
+        "whatWeDo":"co robimy",
+        "contact":"kontakt"
+      },
+      "boxWithHours":{
+        "title":"godziny pracy",
+        "description":"Unser engagiertes Team arbeitet rund um die Uhr. Wenn Sie jedoch sprechen möchten, sind dies die Stunden, die wir telefonisch zur Verfügung haben. Alle Stunden beziehen sich auf die UTC / GMT-Zeitzone",
+        "monThur":"Pon. - Czw.:",
+        "fri":"Pt.:",
+        "satSun":"Sob. - Nie:",
+        "closed":"zamknięte"
+      },
+      "subscribe":{
+        "title":"subscribe to newsletter",
+        "description":"To keep in the loop, about whats happening at Swan IT Works, subscribe here.",
+        "placeholder":"Wpisz swój adres email",
+        "validationInfo":"Podaj prosze prawidłowy adres email",
+        "button":"Zapisz Się"
       }
     }
   }

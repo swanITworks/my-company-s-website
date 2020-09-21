@@ -1,9 +1,10 @@
-export const checkValidation = (value, rules) => {
+export const checkValidation = (value, rules, validationInfos) => {
+  
   let isValid = true
   let errors = []
 
   if (rules.required) {
-    const message = "This value is required"
+    const message = validationInfos.value
     const thisValid = value.trim() !== ""
     isValid = thisValid && isValid
     if (!thisValid) {
@@ -17,7 +18,7 @@ export const checkValidation = (value, rules) => {
   }
 
   if (rules.maxLength) {
-    const message = `This field should have maximum ${rules.maxLength} characters`
+    const message = `${ validationInfos.max } ${ rules.maxLength } ${ validationInfos.characters }`
     const thisValid = value.trim().length <= rules.maxLength
     isValid = thisValid && isValid
     if (!thisValid) {
@@ -31,7 +32,7 @@ export const checkValidation = (value, rules) => {
   }
 
   if (rules.minLength) {
-    const message = `This field should have minimum ${rules.minLength} characters`
+    const message = `${ validationInfos.max } ${rules.minLength} ${ validationInfos.characters }`
     const thisValid = value.trim().length >= rules.minLength
     isValid = thisValid && isValid
     if (!thisValid) {
@@ -45,7 +46,7 @@ export const checkValidation = (value, rules) => {
   }
 
   if (rules.email) {
-    const message = `Please put correct email address`
+    const message = `${ validationInfos.email }`
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     const thisValid = re.test(value)
     isValid = thisValid && isValid
