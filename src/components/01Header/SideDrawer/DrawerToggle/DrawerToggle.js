@@ -10,7 +10,7 @@ const DrawerToggle = (props) => {
   } else { classesArray = [classes.DrawerToggle] }
 
   return (
-    <div onClick={props.onClick} className={classesArray.join(" ")}>
+  <div tabIndex={0} role='button' onKeyPress={(e) => (e.key === 'Enter' ? props.onClick : null)} onClick={props.onClick} className={classesArray.join(" ")}>
       <div></div>
       <div></div>
       <div></div>

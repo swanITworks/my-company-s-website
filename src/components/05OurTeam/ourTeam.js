@@ -38,7 +38,7 @@ const OurTeam = () => {
 
   useEffect(() => {
     changeProgress(person)
-  }, [person])
+  }, [person]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     setProgressValues([0, 0, 0, 0])

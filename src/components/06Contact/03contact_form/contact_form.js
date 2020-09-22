@@ -170,7 +170,7 @@ const Form = ( { form }) => {
         </div>
         <ActionButton onClick={onClickHandler} type={"form"} text={ form.button }/>
         <div style={{marginLeft: 'auto'}} className={classes.captchaMobile}>
-          <Recaptcha render='explicit' onloadCallback={console.log.bind(this, "recaptcha loaded")} sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
+          <Recaptcha render='explicit' sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
                      verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
           {captcha.error ? <p className={classes.captchaError}>{captcha.error}</p> : null}
         </div>

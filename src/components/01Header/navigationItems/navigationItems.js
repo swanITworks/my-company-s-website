@@ -20,15 +20,10 @@ const langs = graphql`
 const NavigationItems = ( props ) => {
 
   const { links: { home, about, whatWeDo, contact } } = useTranslations();
-
   const data = useStaticQuery(langs);
-
   const { allFile: { edges : namesOfLang } } = data
-
   const scroll = props.isscroll
-
   const { locale } = React.useContext(LocaleContext);
-
   const [ mouseOn, setMouseOn ] = useState( false );
 
   return (
@@ -46,18 +41,18 @@ const NavigationItems = ( props ) => {
         <li>
           <NavItem key={4} to={'/contact'} text={contact} isscroll={scroll} mobile={false}/>
         </li>
-        <li style={{margin:'0px', transform: 'translateY(8px)'}} onMouseEnter={()=>{
+        <li  style={{margin:'0px', transform: 'translateY(8px)'}}>
+          <div role="button" tabIndex={0} onMouseEnter={()=>{
             setMouseOn(true);
         }} onMouseLeave={()=>{
           setMouseOn(false);
-        }}>
+        }} onFocus={()=>{setMouseOn(true)}}>
           <LangsFlags items={mouseOn ? namesOfLang : [{node:{name:locale}}]}/>
+          </div>
         </li>
         </ul>
     </nav>
   )
 }
-
-
 
 export default NavigationItems
