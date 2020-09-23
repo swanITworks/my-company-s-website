@@ -1,8 +1,7 @@
 .whatWeDoBoxes_Box {
     font-family: 'Nunito', sans-serif;
-    width: 34%;
+    width: 34%;   
 }
-
 .bottom {
     padding: 1rem;
     text-align: justify;
@@ -69,6 +68,9 @@
 }
 
 @media only screen and (max-width: 600px) and (min-height: 641px) {
+    img {
+        margin: 0;
+    }
     .hide {
         display: none;
     }

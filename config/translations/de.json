@@ -328,7 +328,8 @@
           "max": "Dieses Feld sollte maximal",
           "min": "Dieses Feld sollte mindestens",
           "characters": "Zeichen enthalten.",
-          "email": "Bitte geben Sie die richtige E-Mail-Adresse an."
+          "email": "Bitte geben Sie die richtige E-Mail-Adresse an.",
+          "captchaError": "Please check the checkbox"
         } 
       }
     },

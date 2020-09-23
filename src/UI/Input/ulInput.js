@@ -20,8 +20,8 @@ const Input = (props) => {
     inputClasses.push(classes.error)
     if (valid.errors.length > 0) {
       errorMessages = (
-        valid.errors.map(error => {
-          return <div className={classes.errorItem}>{error}</div>
+        valid.errors.map((error,index) => {
+          return <div key={index} className={classes.errorItem}>{error}</div>
         })
       )
     }

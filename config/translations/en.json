@@ -333,7 +333,8 @@
             "max": "This field should have maximum",
             "min": "This field should have minimum",
             "characters": "characters",
-            "email": "Please put correct email address"
+            "email": "Please put correct email address",
+            "captchaError": "Please check the checkbox"
         } 
       }
     },

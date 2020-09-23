@@ -135,6 +135,7 @@ const query = graphql`
                   min
                   characters
                   email
+                  captchaError
                 }
               }
             }

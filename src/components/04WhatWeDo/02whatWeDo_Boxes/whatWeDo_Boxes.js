@@ -14,7 +14,6 @@ const WhatWeDo_Boxes = (props) => {
             return <WhatWeDoBoxesBox key={index} title={item.title} info={item.info} even={false}/>
           }
       })}
-
     </article>
   )
 }

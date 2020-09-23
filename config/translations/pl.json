@@ -327,7 +327,8 @@
           "max": "To pole moze miec maksimum",
           "min": "To pole moze miec minimum",
           "characters": "znaków.",
-          "email": "Prosze podaj poprawny adres email."
+          "email": "Prosze podaj poprawny adres email.",
+          "captchaError": "Zaznacz prosze pole."
       } 
       }
     },

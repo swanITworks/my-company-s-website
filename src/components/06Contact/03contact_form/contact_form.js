@@ -30,6 +30,7 @@ const Form = ( { form }) => {
       formValid = inputElements[key].valid.value && formValid && captcha.status
     }
     setIsFormValid(formValid)
+    return expiredCallback();
   }, [inputElements, captcha.status])
 
   const onChangeHandler = (event, elementId) => {
@@ -107,32 +108,32 @@ const Form = ( { form }) => {
       name: {
         ...inputElements.name,
         value: inputElements["name"].value,
-        valid: checkValidation(inputElements["name"].value, inputElements["name"].validation),
+        valid: checkValidation(inputElements["name"].value, inputElements["name"].validation,form.validationInfos),
         touched: true,
       },
       email: {
         ...inputElements.email,
         value: inputElements["email"].value,
-        valid: checkValidation(inputElements["email"].value, inputElements["email"].validation),
+        valid: checkValidation(inputElements["email"].value, inputElements["email"].validation,form.validationInfos),
         touched: true,
       },
       subject: {
         ...inputElements.subject,
         value: inputElements["subject"].value,
-        valid: checkValidation(inputElements["subject"].value, inputElements["subject"].validation),
+        valid: checkValidation(inputElements["subject"].value, inputElements["subject"].validation,form.validationInfos),
         touched: true,
       },
       message: {
         ...inputElements.message,
         value: inputElements["message"].value,
-        valid: checkValidation(inputElements["message"].value, inputElements["message"].validation),
+        valid: checkValidation(inputElements["message"].value, inputElements["message"].validation,form.validationInfos),
         touched: true,
       },
     })
     if (!captcha.status) {
       setCaptcha({
         status: false,
-        error: "Please check the checkbox",
+        error: form.validationInfos.captchaError,
       })
     }
   }
@@ -170,7 +171,7 @@ const Form = ( { form }) => {
         </div>
         <ActionButton onClick={onClickHandler} type={"form"} text={ form.button }/>
         <div style={{marginLeft: 'auto'}} className={classes.captchaMobile}>
-          <Recaptcha render='explicit' sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
+          <Recaptcha render='explicit' onloadCallback={console.log.bind(this, "recaptcha loaded")} sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
                      verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
           {captcha.error ? <p className={classes.captchaError}>{captcha.error}</p> : null}
         </div>

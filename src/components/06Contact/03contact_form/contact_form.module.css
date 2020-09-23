@@ -66,6 +66,10 @@ textarea:focus {
     background-color: #f6663f;
     border-radius: 5px;
     color: white;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    width: 100%;
+
 }
 
 .successMessage {

@@ -155,11 +155,7 @@ const WhatWeDo_Boxes_Box = (props) => {
 
   return (
     <article className={classesArray.join(" ")}>
-      <div className={classes.top}>
-        <div style={imageStyles}>
-          {image}
-        </div>
-      </div>
+      {image}
       <div className={even !== true ? classes.bottomEven : classes.bottom}>
         <header className={even !== true ? classes.titleEven : classes.title}>
           {title}

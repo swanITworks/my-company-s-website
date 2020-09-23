@@ -5,63 +5,15 @@ import Boxes from "./02whatWeDo_Boxes/whatWeDo_Boxes"
 import Dots from "./03WhatWeDo_Dots/dots"
 import useTranslations from "../useTranslations"
 
-const items = [
-  {
-    title: "Mobile Apps",
-    info: "Tell us any design that you wish for, and we can provide it for your Android or iOS mobile app.",
-  },
-  {
-    title: "Web Apps",
-    info: "Using modern browsers, we can design anything, just tell us what you want for your web app.",
-  },
-  {
-    title: "Websites",
-    info: "We can build blogs, company websites, product configurators, and price comparison systems.",
-  },
-  {
-    title: "E-commerce",
-    info: "We are experienced in moving commerce online; it’s been our passion for the last ten years.",
-  },
-  {
-    title: "ERP Systems",
-    info: "Simplifying software is our primary speciality; as we know how hard it is to manage a business.",
-  },
-  {
-    title: "CMS Systems",
-    info: "Based on your needs and assumptions, we can build content management systems from scratch.",
-  },
-  {
-    title: "CRM Software",
-    info: "All of us know how customer relationship management is vital to survive; we can help you.",
-  },
-  {
-    title: "B2B Systems",
-    info: "Save more time for your company by allowing clients to order products or services directly.",
-  },
-  {
-    title: "Bespoke Software",
-    info: "Share with us your exciting software ideas, which we can custom build for you from scratch.",
-  },
-  {
-    title: "Automation processes",
-    info: "To save money, we automate invoice delivery and newsletter self sending to all your clients.",
-  },
-  {
-    title: "Integration of systems",
-    info: "We synchronise systems to work together and save you time by eliminating unnecessary work.",
-  },
-  {
-    title: "IT support",
-    info: "Our IT help is diverse, ask us, and we can provide our best quote for the service required.",
-  }
-]
 
 const WhatWeDo = () => {
 
   const [itemToShow, setItemToShow] = useState(1)
 
-  const { whatWeDo: { title, description, things, mainSlogan: { slogan, markedSlogan } } } = useTranslations()
+const { whatWeDo: { title, description, things, mainSlogan: { slogan, markedSlogan } } } = useTranslations()
+  const { whatWeDo: { things : items} } = useTranslations()
 
+  console.log(items);
 
   useEffect(() => {
     let interval = setInterval(() => {
