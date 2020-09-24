@@ -23,4 +23,8 @@ margin-top: 0.8rem;
     .sideDrawer {
         display: none;
     }
+
+    .sideDrawerScroll{
+        display: none;
+    }
 }

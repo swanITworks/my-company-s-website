@@ -22,7 +22,12 @@ const Header = () => {
       }
     }
     window.addEventListener("scroll", offset)
-    return () => window.removeEventListener("scroll", offset)
+    window.addEventListener("resize", ()=>{setIsShowSideDrawer(false)});
+    return (
+      () => {
+      window.removeEventListener("scroll", offset)
+      }
+    )
   }, [])
 
   let classesArray = [classes.header]

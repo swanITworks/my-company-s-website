@@ -12,9 +12,7 @@ const WhatWeDo = () => {
 
 const { whatWeDo: { title, description, things, mainSlogan: { slogan, markedSlogan } } } = useTranslations()
   const { whatWeDo: { things : items} } = useTranslations()
-
-  console.log(items);
-
+  
   useEffect(() => {
     let interval = setInterval(() => {
       setItemToShow(prevState => {
@@ -26,7 +24,7 @@ const { whatWeDo: { title, description, things, mainSlogan: { slogan, markedSlog
       })
     }, 5000)
     return ()=> clearInterval(interval);
-  }, [])
+  }, [items.length])
 
   const showBoxes = (items) => {
     const quantityOfItems = items.length

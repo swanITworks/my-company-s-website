@@ -98,12 +98,6 @@ const WhatWeDo_Boxes_Box = (props) => {
   const even = props.even
 
   const data = useStaticQuery(getImages)
-
-  const imageStyles = {
-    height: "200px",
-    backgroundPosition: "center",
-  }
-
   let image
 
   switch (title) {
