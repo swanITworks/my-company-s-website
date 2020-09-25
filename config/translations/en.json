@@ -47,7 +47,7 @@
       {
         "introduction": "Time is precious.",
         "mainTitleStart": "Contact us and",
-        "mainTitleSpan": "take back",
+        "mainTitleSpan": "take",
         "mainTitleEnd": "control.",
         "slogan": "All your IT needs can be covered by us.",
         "onClick": "/contact#contact"
@@ -201,7 +201,7 @@
           "name": "Jessica Brown",
           "imageName": "jessica",
           "title": "BACK END DEVELOPER",
-          "info": "Linux enthusiast, knows all commands by heart. He moves around the SQL database with deadly accuracy. No data is foreign to her, give her some characteristics and she will calculate the size of your shoe.",
+          "info": "Linux enthusiast, knows all commands by heart. She moves around the SQL database with deadly accuracy. No data is foreign to her, give her some characteristics and she will calculate the size of your shoe.",
           "skills": 
           [
             { 
@@ -346,7 +346,7 @@
         "emailTitle":"business email:"
       },
       "boxWithSiteMap":{
-        "title":"usefull links",
+        "title":"useful links",
         "home":"home",
         "aboutUs":"about us",
         "whatWeDo":"what we do",

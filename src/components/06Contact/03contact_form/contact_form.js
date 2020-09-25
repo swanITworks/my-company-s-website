@@ -15,7 +15,7 @@ const Form = ( { form }) => {
   const [sentSuccess, setSentSuccess] = useState(false)
   const [sentError, setSentError] = useState(false)
   const [captcha, setCaptcha] = useState({ status: false, error: "", token: "" })
-
+  
   const verifyCallback = function(response) {
     setCaptcha({ status: true, error: "", token: response })
   }
@@ -30,7 +30,6 @@ const Form = ( { form }) => {
       formValid = inputElements[key].valid.value && formValid && captcha.status
     }
     setIsFormValid(formValid)
-    return expiredCallback();
   }, [inputElements, captcha.status])
 
   const onChangeHandler = (event, elementId) => {
@@ -133,7 +132,8 @@ const Form = ( { form }) => {
     if (!captcha.status) {
       setCaptcha({
         status: false,
-        error: form.validationInfos.captchaError,
+        error: "Please check the checkbox"
+        //form.validationInfos.captchaError,
       })
     }
   }
@@ -158,7 +158,7 @@ const Form = ( { form }) => {
     )
   )
 
-  const formArea = (
+    const formArea = (
     <form id={"someForm"} onSubmit={onSubmit} className={classes.formBottom}>
       <div className={classes.formInputs}>
         {formInputs}
@@ -171,8 +171,12 @@ const Form = ( { form }) => {
         </div>
         <ActionButton onClick={onClickHandler} type={"form"} text={ form.button }/>
         <div style={{marginLeft: 'auto'}} className={classes.captchaMobile}>
-          <Recaptcha render='explicit' onloadCallback={console.log.bind(this, "recaptcha loaded")} sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' theme="light" size='normal'
-                     verifyCallback={verifyCallback} expiredCallback={expiredCallback}/>
+          { inputElements.name.touched ? <Recaptcha 
+            render='explicit' 
+            onloadCallback={console.log.bind(this, "recaptcha loaded")} 
+            sitekey='6LeHcKwZAAAAAIqiRuvwu8rW-Jtaf4JIh_D5pZ2B' 
+            theme="light" size='normal'
+            verifyCallback={verifyCallback} expiredCallback={expiredCallback}/> : null}
           {captcha.error ? <p className={classes.captchaError}>{captcha.error}</p> : null}
         </div>
       </div>
@@ -203,7 +207,7 @@ const Form = ( { form }) => {
       return error
     } else return formArea
   }
-
+  
   return (
     <article className={classes.form}>
       <div className={classes.formHeader}>

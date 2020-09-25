@@ -2,9 +2,9 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Swan IT works`,
+    description: `We are a leading innovation digitising and software house company.`,
+    author: `Swan IT works`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -69,6 +69,12 @@ module.exports = {
         path: path.join(__dirname,`config`,`translations`),
       },
     },
-    `gatsby-transformer-json`
+    `gatsby-transformer-json`,
+    {
+      resolve: 'gatsby-plugin-zopfli',
+      options: {
+        extensions: ['css', 'html', 'js', 'svg']
+      }
+    }
   ],
 }

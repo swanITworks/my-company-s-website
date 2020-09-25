@@ -5,8 +5,8 @@ import WhatWeDo from "../components/04WhatWeDo/whatWeDo"
 import OurTeam from "../components/05OurTeam/ourTeam"
 import Contact from "../components/06Contact/contact"
 
-
-const IndexPage = () => (
+const IndexPage = () => {
+  return (
   <>
     <Slider selected={0}/>
     <AboutUs/>
@@ -14,6 +14,7 @@ const IndexPage = () => (
     <OurTeam/>
     <Contact/>
   </>
-)
+  )
+}
 
 export default IndexPage
