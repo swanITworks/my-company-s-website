@@ -8,9 +8,9 @@ function ourTeam_Boxes(props) {
 
   return (
     <article className={classes.ourTeamBoxes}>
-      <div className={classes.imageBox}>
+      
         <Img fluid={image}/>
-      </div>
+
       <section className={classes.nameBox}>
         <p className={classes.name}><span className={classes.span}>{person.name}</span></p>
         <p className={classes.title}>{person.title}</p>

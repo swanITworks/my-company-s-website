@@ -2,6 +2,7 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
+    siteUrl: "http://swanitworks.com",
     title: `Swan IT works`,
     description: `We are a leading innovation digitising and software house company.`,
     author: `Swan IT works`,
@@ -10,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
 
     {
       resolve: `gatsby-plugin-manifest`,

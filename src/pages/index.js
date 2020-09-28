@@ -7,13 +7,13 @@ import Contact from "../components/06Contact/contact"
 
 const IndexPage = () => {
   return (
-  <>
-    <Slider selected={0}/>
-    <AboutUs/>
-    <WhatWeDo/>
-    <OurTeam/>
-    <Contact/>
-  </>
+      <>
+        <Slider selected={0}/>
+        <AboutUs/>
+        <WhatWeDo/>
+        <OurTeam/>
+        <Contact/>
+      </>
   )
 }
 
