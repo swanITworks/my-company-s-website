@@ -6,11 +6,10 @@ import DrawerToggle from "./SideDrawer/DrawerToggle/DrawerToggle"
 import SideDrawer from "./SideDrawer/sideDrawer"
 
 const Header = () => {
-
   const [scroll, setScroll] = useState(false)
   const [isShowSideDrawer, setIsShowSideDrawer] = useState(false)
   const showSideDrawerHandler = () => {
-    setIsShowSideDrawer(prevState => !prevState)
+    setIsShowSideDrawer((prevState) => !prevState)
   }
 
   useEffect(() => {
@@ -22,12 +21,12 @@ const Header = () => {
       }
     }
     window.addEventListener("scroll", offset)
-    window.addEventListener("resize", ()=>{setIsShowSideDrawer(false)});
-    return (
-      () => {
+    window.addEventListener("resize", () => {
+      setIsShowSideDrawer(false)
+    })
+    return () => {
       window.removeEventListener("scroll", offset)
-      }
-    )
+    }
   }, [])
 
   let classesArray = [classes.header]
@@ -39,13 +38,17 @@ const Header = () => {
   }
 
   return (
-    <header id={"home"} className={classesArray.join(" ")} style={isShowSideDrawer ? {backgroundColor: '#171717'}:null}>
+    <header
+      id={"home"}
+      className={classesArray.join(" ")}
+      style={isShowSideDrawer ? { backgroundColor: "#171717" } : null}
+    >
       <div className={classes.items}>
-        <Logo isscroll={scroll}/>
-        <NavigationItems isscroll={scroll}/>
-        <DrawerToggle onClick={showSideDrawerHandler} isscroll={scroll}/>
+        <Logo isscroll={scroll} />
+        <NavigationItems isscroll={scroll} />
+        <DrawerToggle onClick={showSideDrawerHandler} isscroll={scroll} />
       </div>
-      {isShowSideDrawer ? <SideDrawer isscroll={scroll}/> : null}
+      {isShowSideDrawer ? <SideDrawer isscroll={scroll} /> : null}
     </header>
   )
 }
