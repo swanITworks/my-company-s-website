@@ -2,167 +2,167 @@
   "priority": "B",
   "links": {
     "home": "start",
-    "about": "uber uns",
-    "whatWeDo": "was machts wir",
+    "about": "über uns",
+    "whatWeDo": "was wir machen",
     "contact": "kontakt"
   },
 
   "slider":{
     "buttons":{
-      "next":"nächste",
-      "prev":"früher",
-      "exploreMore":"erkunde mehr",
+      "next":"weiter",
+      "prev":"zurück",
+      "exploreMore":"mehr",
       "action":"kontakt"
     },
     "items": [
       {
-        "introduction": "Halten Sie sich an das Wesentliche.",
-        "mainTitleStart": "Lassen Sie",
-        "mainTitleSpan": "Ihr Geschäft",
-        "mainTitleEnd": "florieren.",
-        "slogan": "Sagen Sie uns einfach was und wir erstellen Ihre maßgeschneiderte Software.",
+        "introduction": "Bleiben Sie beim Wesentlichen.",
+        "mainTitleStart": "Bringen Sie",
+        "mainTitleSpan": "Ihr Business",
+        "mainTitleEnd": "zum Florieren.",
+        "slogan": "Sagen Sie uns einfach, was Sie brauchen, und wir erstellen Ihre maßgeschneiderte Software.",
         "onClick": "/de/#about"
       },
       {
-        "introduction": "Code craftsmen.",
-        "mainTitleStart": "We built the worlds",
-        "mainTitleSpan": "best team",
-        "mainTitleEnd": "for you.",
-        "slogan": "Collaborate with us and be surprised at what can be accomplished.",
+        "introduction": "Code-Handwerker.",
+        "mainTitleStart": "Wir stellen das",
+        "mainTitleSpan": "weltbeste Team",
+        "mainTitleEnd": "für Sie zusammen.",
+        "slogan": "Arbeiten Sie mit uns zusammen und lassen Sie sich überraschen, was wir erreichen können.",
         "onClick": "/de/about#ourTeam",
         "marginTop": "6rem"
       },
       {
-        "introduction": "Your business.",
-        "mainTitleStart": "Can earn",
-        "mainTitleSpan": "big money",
-        "mainTitleEnd": "with us.",
-        "slogan": "Small or large business, we don’t discriminate.",
+        "introduction": "Ihr Business.",
+        "mainTitleStart": "kann",
+        "mainTitleSpan": "viel Geld",
+        "mainTitleEnd": "mit uns verdienen.",
+        "slogan": "Ob klein oder groß, wir machen da keine Unterschiede.",
         "onClick": "/de/whatwedo#whatWeDo"
   
       },
       {
-        "introduction": "Time is precious.",
-        "mainTitleStart": "Contact us and",
-        "mainTitleSpan": "take back",
-        "mainTitleEnd": "control.",
-        "slogan": "All your IT needs can be covered by us.",
+        "introduction": "Zeit ist kostbar.",
+        "mainTitleStart": "Kontaktieren Sie uns und",
+        "mainTitleSpan": "übernehmen Sie",
+        "mainTitleEnd": "die Kontrolle.",
+        "slogan": "Wir decken all Ihre IT-Bedürfnisse ab.",
         "onClick": "/de/contact#contact"
       }
     ]
   },
   "aboutUs":{
     "title":"Über uns",
-    "about":"Wir sind ein führendes Unternehmen für Digitalisierungs und Softwarehäuser.",
+    "about":"Wir sind ein führendes Unternehmen für innovative Softwareentwicklung.",
     "main": {
-      "firstPart": "We at Swan IT Works know it can be tedious when cooperating gaining an agreement within the IT industry. Our diverse global team of business practitioners and specialists put",
-      "firstSpan": "your",
-      "secondPart": "needs as our core",
-      "secondSpan": "focus.",
-      "thirdPart": "Yes, we’re a software house; however, we have diversified experience in production, services, hotel and trade management."
+      "firstPart": "Wir bei Swan IT Works wissen, dass es mühsam sein kann, bei Kooperationen mit der IT-Branche Einigungen zu erzielen. Unser globales Team aus Fachkräften und Spezialisten stellt",
+      "firstSpan": "Ihre",
+      "secondPart": "Bedürfnisse in den",
+      "secondSpan": "Mittelpunkt.",
+      "thirdPart": "Wir sind zwar eine Softwarefirma, verfügen jedoch auch über vielfältige Expertise in den Bereichen Produktion, Dienstleistung, Hotel- und Handelsmanagement."
     },
-    "additionalText": "All of us at Swan IT Works are happy to serve your business, whether it’s a small start-up or a large enterprise. Most of us are remote, although, if required we can come to you or meet in Central London. We work around you.",
+    "additionalText": "Wir alle bei Swan IT Works freuen uns, Ihr Unternehmen zu bedienen - egal, ob es sich um ein kleines Start-up oder einen Großbetrieb handelt. Die meisten von uns arbeiten von verschiedenen Orten aus, aber bei Bedarf kommen wir zu Ihnen oder treffen Sie in London. Wir arbeiten um Sie herum.",
     "bestsData":[
       {
         "number": "01.",
-        "title": "Setzen Sie um, was wir predigen.",
-        "text": "We are more than digesters of code; we understand your needs like no other because we practice business."
+        "title": "Umsetzen, was wir predigen.",
+        "text": "Wir sind mehr als Verarbeiter von Code. Wir verstehen Ihre Bedürfnisse wie niemand anderes, weil wir Geschäfte machen leben."
       },
       {
         "number": "02.",
-        "title": "Use cutting edge technology.",
-        "text": "To ease learning, we use the latest technology. So our applications are the most efficient and fastest."
+        "title": "Modernste Technologie verwenden.",
+        "text": "Wir bilden uns ständig fort und verwenden die neueste Technologie. Unsere Anwendungen sind die effizientesten und schnellsten."
       },
       {
         "number": "03.",
-        "title": "Focus on quality yet deliver fast.",
-        "text": "Just like our software, we’re an agile and flexible workforce. We don’t want to be a large corporation."
+        "title": "Auf Qualität setzen, und gleichzeitig schnell liefern.",
+        "text": "Genau wie unsere Software, sind wir als Arbeitsteam agil und flexibel. Wir möchten kein großer Konzern sein."
       }
     ]
   },
   "whatWeDo": {
-    "title": "Was machen Wir",
+    "title": "Was wir machen",
     "mainSlogan": {
-      "slogan": "Wir stehen im Mittelpunkt eines",
-      "markedSlogan": "weltweit führenden Service."
+      "slogan": "Mittelpunkt eines führenden",
+      "markedSlogan": "weltweiten Services sein."
     },
-    "description": "Wenn Sie maßgeschneiderte Software benötigen, sind Sie bei Swan IT Works genau richtig. Wir arbeiten akribisch an Websites für komplizierte Anwendungen, die auf Business Intelligence basieren. Die Fähigkeiten unserer Entwickler sind unbegrenzte Erstellungssoftware für alle Geräte und Betriebssysteme.",
+    "description": "Wenn Sie maßgeschneiderte Software benötigen, sind Sie bei Swan IT Works genau richtig. Wir arbeiten akribisch an Webseiten und komplizierten Anwendungen und beziehen dabei Business Intelligence ein. Die Fähigkeiten unserer Entwickler sind unbegrenzt, wenn es um das Gestalten von Software für alle Geräte und Betriebssysteme geht.",
     "things":[
       {
         "title": "Mobile Apps",
-        "info": "Teilen Sie uns jedes gewünschte Design mit, und wir können es für Ihre mobile Android- oder iOS-App bereitstellen."
+        "info": "Teilen Sie uns jedes beliebige Wunschdesign mit, und wir stellen es für Ihre mobile Android- oder iOS-App bereit."
       },
       {
-        "title": "Web Apps",
-        "info": "Using modern browsers, we can design anything, just tell us what you want for your web app."
+        "title": "Webanwendungen",
+        "info": "Wir können alles entwerfen und haben dabei moderne Browser im Blick. Sagen Sie uns einfach, was für Webanwendungen Sie gerne hätten."
       },
       {
-        "title": "Websites",
-        "info": "We can build blogs, company websites, product configurators, and price comparison systems."
+        "title": "Webseiten",
+        "info": "Wir erstellen Blogs, Webseiten für Unternehmen, Produktkonfigurationen und Preisvergleichssysteme."
       },
       {
-        "title": "E-commerce",
-        "info": "We are experienced in moving commerce online; it’s been our passion for the last ten years."
+        "title": "E-Commerce",
+        "info": "Wir sind Profis in Sachen Onlinehandel; das ist seit 10 Jahren unsere Leidenschaft."
       },
       {
-        "title": "ERP Systems",
-        "info": "Simplifying software is our primary speciality; as we know how hard it is to manage a business."
+        "title": "Warenwirtschaftssysteme",
+        "info": "Software zu vereinfachen ist unsere Hauptspezialität. Wir wissen, wie schwierig es ist, ein Unternehmen zu managen."
       },
       {
-        "title": "CMS Systems",
-        "info": "Based on your needs and assumptions, we can build content management systems from scratch."
+        "title": "Content-Management-Systeme",
+        "info": "Auf der Basis Ihrer Bedürfnisse und Voraussetzungen können wir passgenaue Content-Management-Systeme erstellen."
       },
       {
-        "title": "CRM Software",
-        "info": "All of us know how customer relationship management is vital to survive; we can help you."
+        "title": "CRM-Software",
+        "info": "Wir alle wissen, dass das Managen von Kundenbeziehungen unverzichtbar ist, um zu überleben. Wir helfen Ihnen."
       },
       {
-        "title": "B2B Systems",
-        "info": "Save more time for your company by allowing clients to order products or services directly."
+        "title": "B2B-Systeme",
+        "info": "Sparen Sie Zeit, indem Sie Kunden ermöglichen, Produkte oder Services direkt zu bestellen."
       },
       {
-        "title": "Bespoke Software",
-        "info": "Share with us your exciting software ideas, which we can custom build for you from scratch."
+        "title": "Software nach Maß",
+        "info": "Teilen Sie Ihre aufregenden Softwareideen mit uns, und wir setzen sie individuell für sie um."
       },
       {
-        "title": "Automation processes",
-        "info": "To save money, we automate invoice delivery and newsletter self sending to all your clients."
+        "title": "Automatisierungsprozesse",
+        "info": "Sie sparen Geld, wenn wir den Versand von Kundenrechnungen und Newslettern automatisieren."
       },
       {
-        "title": "Integration of systems",
-        "info": "We synchronise systems to work together and save you time by eliminating unnecessary work."
+        "title": "Integration von Systemen",
+        "info": "Wir synchronisieren Systeme und ersparen Ihnen Zeitaufwand, indem wir unnötige Arbeit beseitigen."
       },
       {
-        "title": "IT support",
-        "info": "Our IT help is diverse, ask us, and we can provide our best quote for the service required."
+        "title": "IT-Unterstützung",
+        "info": "Unsere IT-Hilfsangebote sind vielfältig. Fragen Sie uns, und wir unterbreiten Ihnen unser bestes Angebot für den erforderlichen Service."
       }
     ]
   },
   "ourTeam":{
-    "title":"Treffen Sie den Spezialisten",
-    "slogan":"Unser vielfältiges Team von Fachleuten kümmert sich um Ihre IT-Anforderungen.",
+    "title":"Treffen Sie die Experten",
+    "slogan":"Unser breit aufgestelltes Team von Profis kümmert sich um Ihre IT-Anforderungen.",
     "people":[
       {
         "name": "Adrian Sobolewski",
         "imageName": "adrian",
-        "title": "SALES EXECUTIVE",
-        "info": "Adrian wird garantieren, dass Sie auf höchstem Niveau bedient werden. Er hilft Ihnen bei der Entwicklung Ihrer Ideen und passt das Angebot des Unternehmens an Ihre Bedürfnisse an.",
+        "title": "VERKAUFSLEITER",
+        "info": "Adrian garantiert, dass Sie auf höchstem Niveau bedient werden. Er hilft Ihnen bei der Entwicklung Ihrer Ideen und richtet unser Angebot nach Ihren Bedürfnissen aus.",
         "skills": 
         [
           { 
-            "skillName": "marketing",
+            "skillName": "Marketing",
             "skillValue": 67
              }, 
           { 
-            "skillName": "communication",
+            "skillName": "Kommunikation",
             "skillValue": 93 
               },
           { 
-            "skillName": "keep smiling",
+            "skillName": "Immer lächeln",
             "skillValue": 79 
               },
           { 
-            "skillName": "languages",
+            "skillName": "Sprachen",
             "skillValue": 89 
               }   
         ]
@@ -170,8 +170,8 @@
       {
         "name": "Konrad Olson",
         "imageName": "konrad",
-        "title": "PYTHON DEVELOPER",
-        "info": "Clean code lover, every bit matters to him. In a previous incarnation, he probably was a snake because Python has no secrets from him. In his spare time he is a fan of various types of beer and rock and roll.",
+        "title": "PYTHON-ENTWICKLER",
+        "info": "Liebhaber von sauberem Code, jedes Bit ist ihm wichtig. In einer früheren Inkarnation war er vermutlich eine Schlange, weil Python keine Geheimnisse vor ihm zurückhalten kann. In seiner Freizeit ist er ein Fan verschiedener Biersorten und Rock'n'Roll.",
         "skills": 
         [
           { 
@@ -179,7 +179,7 @@
             "skillValue": 87
           },
           { 
-            "skillName": "Databases",
+            "skillName": "Datenbanken",
             "skillValue": 64
           }, 
           { 
@@ -195,8 +195,8 @@
       {
         "name": "Jessica Brown",
         "imageName": "jessica",
-        "title": "BACK END DEVELOPER",
-        "info": "Linux enthusiast, knows all commands by heart. He moves around the SQL database with deadly accuracy. No data is foreign to her, give her some characteristics and she will calculate the size of your shoe.",
+        "title": "BACKEND-ENTWICKLERIN",
+        "info": "Linux-Enthusiastin, kennt alle Befehle auswendig. Bewegt sich mit tödlicher Genauigkeit in SQL-Datenbanken. Keine Art Daten sind ihr fremd, gib ihr ein paar Eigenschaften und sie berechnet die Größe deines Schuhs.",
         "skills": 
         [
           { 
@@ -212,7 +212,7 @@
             "skillValue": 74
           },
           { 
-            "skillName": "diligence",
+            "skillName": "Gewissenhaftigkeit",
             "skillValue": 99
           }
         ]
@@ -220,8 +220,8 @@
       {
         "name": "Chrystina Wild",
         "imageName": "chrystina",
-        "title": ".NET DEVELOPER",
-        "info": "Sie ist eine aufgeschlossene Person, Softwarearchitektur ist ihre Spezialität. Kann die Zukunft und Richtung der Softwareentwicklung vorhersagen. Sie liebt Reiten und träumt von ihrem eigenen Gestüt.",
+        "title": ".NET-ENTWICKLERIN",
+        "info": "Aufgeschlossene Person, Softwarearchitektur ist ihre Spezialität. Kann Zukunft und Richtung der Softwareentwicklung vorhersagen. Sie liebt Reiten und träumt von ihrem eigenen Gestüt.",
         "skills": 
         [
           { 
@@ -237,41 +237,40 @@
             "skillValue": 65
           },
           { 
-            "skillName": "software architecture",
+            "skillName": "Softwarearchitektur",
             "skillValue": 89
           }
         ]
       },
       {
         "name": "Jevgeni Simonov",
-        "imageName": "chrystina",
-        "title": ".NET DEVELOPER",
-        "info": "Sie ist eine aufgeschlossene Person, Softwarearchitektur ist ihre Spezialität. Kann die Zukunft und Richtung der Softwareentwicklung vorhersagen. Sie liebt Reiten und träumt von ihrem eigenen Gestüt.",
-        "skills": 
-        [
-          { 
-            "skillName": "C#",
-            "skillValue": 85
-          },
-          { 
-            "skillName": ".NET",
-            "skillValue": 78
-          }, 
-          { 
-            "skillName": "Java",
-            "skillValue": 65
-          },
-          { 
-            "skillName": "software architecture",
-            "skillValue": 89
-          }
+        "imageName": "jevgeni",
+          "title": "FRONTEND-ENTWICKLER",
+          "info": "Er mag Vanilla Javascript, vorzugsweise jeden Code, der von ihm selbst geschrieben wurde. Er kennt sich mit Design und Benutzererfahrung aus. Manchmal zeichnet er auch von Hand.",
+          "skills": 
+          [
+            { 
+              "skillName": "Java Script",
+              "skillValue": 99
+            },
+            { 
+              "skillName": "Adobe Illustrator",
+              "skillValue": 54
+            }, 
+            { 
+              "skillName": "React JS",
+              "skillValue": 45
+            },
+            { 
+              "skillName": "CSS",
+              "skillValue": 70          }
         ]
       },
       {
         "name": "Michal Labedz",
         "imageName": "michal",
-        "title": "JUNIOR FULL STACK DEVELOPER",
-        "info": "Ambitious, highly motivated to achieve goals. He has experience in business processes. Consistently increases his knowledge in programming. In his spare time he loves to sail the seas and oceans.",
+        "title": "JUNIOR FULL STACK-ENTWICKLER",
+        "info": "Ambitioniert und hochmotiviert, seine Ziele zu erreichen. Erfahren auf dem Gebiet der Geschäftsprozesse. Verbessert regelmäßig seine Programmierkenntnisse. In seiner Freizeit segelt er gerne.",
         "skills": 
         [
           { 
@@ -297,30 +296,30 @@
   "contact": {
     "title": "Kontakt",
     "slogan": { "text":"Wir stellen Sie", "markedText":"an die erste Stelle." },
-    "description": "Bei Swan IT Works behandeln wir jeden Kunden gleich, egal ob es sich um ein kleines, kleines oder großes Unternehmen handelt. Auch wenn es sich um ein bevorstehendes Projekt, ein Angebot oder eine Anfrage handelt, kontaktieren Sie uns. Wir passen unsere Angebote und Dienstleistungen an Sie an.",
+    "description": "Bei Swan IT Works behandeln wir jeden Kunden gleich, egal ob es sich um ein Mikro-, Klein- oder Großunternehmen handelt. Und wenn es sich nur um ein Projekt in der Zukunft, ein Angebot oder eine Anfrage handelt, kontaktieren Sie uns. Wir passen unsere Angebote und Dienstleistungen an Sie an.",
     "icons": {
       "phone": "Telefon",
       "address": "Adresse",
-      "email": "email"
+      "email": "E-Mail"
       },
     "form": {
-      "title": "Get in touch with us",
-      "description": "Wir bemühen uns, jede Korrespondenz innerhalb von 24 Stunden zu beantworten. Geben Sie einfach Ihre Daten unten ein.",
+      "title": "Kontaktieren Sie uns",
+      "description": "Wir bemühen uns, innerhalb von 24 Stunden zu antworten. Geben Sie einfach unten Ihre Daten ein.",
       "placeHolders": {
-        "name": "Ihr Name und Vorname",
-        "email": "Ihr Email",
-        "subject": "Ihr Thema",
-        "message": "Ihr Nachricht"
+        "name": "Name und Vorname",
+        "email": "E-Mail-Adresse",
+        "subject": "Um was geht es",
+        "message": "Ihre Nachricht"
         },
         "button": "Senden",
         "messages": {
           "success": {
-            "status": "Your message was sent",
-            "info": "We will answer in 24h"
+            "status": "Ihre Nachricht wurde gesendet",
+            "info": "Wir werden innerhalb von 24 Stunden antworten"
           },
           "error": {
-            "status":"Error! Your message was not send.",
-            "info":"Please write directly on our email or call us."
+            "status":"Fehler! Ihre Nachricht wurde nicht gesendet.",
+            "info":"Bitte schreiben Sie uns eine E-Mail oder rufen Sie uns an."
           }
         },
         "validationInfos":{
@@ -329,37 +328,37 @@
           "min": "Dieses Feld sollte mindestens",
           "characters": "Zeichen enthalten.",
           "email": "Bitte geben Sie die richtige E-Mail-Adresse an.",
-          "captchaError": "Please check the checkbox"
+          "captchaError": "Bitte hier Haken setzen"
         } 
       }
     },
     "footer":{
       "boxWithLogo":{
-        "description":"Wir sind ein führendes Softwarehaus mit einem soliden Bewusstsein für Geschäftsprozesse. Swan IT Works erstellt maßgeschneiderte Websites, mobile Apps, Web-Apps, Desktop-Software usw. Sagen Sie uns, was Sie wollen, und wir erstellen.",
+        "description":"Wir sind eine führende Softwarefirma mit einem soliden Bewusstsein für Geschäftsprozesse. Swan IT Works erstellt maßgeschneiderte Webseiten, mobile Apps, Webanwendungen, Desktop-Software usw. Teilen Sie uns mit, was Sie benötigen, und wir erstellen es.",
         "adressTitle":"Geschäftsadresse:",
         "phoneTitle":"Geschäftstelefon:",
-        "emailTitle":"Geschäftliche E-Mail:"
+        "emailTitle":"Geschäftliche E-Mail-Adresse:"
       },
       "boxWithSiteMap":{
         "title":"Nützliche Links",
-        "home":"start",
+        "home":"Start",
         "aboutUs":"Über uns",
-        "whatWeDo":"Was machts wir",
+        "whatWeDo":"Was wir machen",
         "contact":"Kontakt"
       },
       "boxWithHours":{
         "title":"Öffnungszeiten",
-        "description":"Unser engagiertes Team arbeitet rund um die Uhr. Wenn Sie jedoch sprechen möchten, sind dies die Stunden, die wir telefonisch zur Verfügung haben. Alle Stunden beziehen sich auf die UTC / GMT-Zeitzone",
-        "monThur":"Mon. - Don.:",
-        "fri":"Frei.",
-        "satSun":"sat - sun:",
-        "closed":"closed"
+        "description":"Unser engagiertes Team arbeitet rund um die Uhr. Wenn Sie mit uns sprechen möchten, können sie uns zu folgenden Zeiten anrufen. Alle Zeiten beziehen sich auf die UTC/GMT-Zeitzone",
+        "monThur":"Mo - Do:",
+        "fri":"Fr",
+        "satSun":"Sa - So:",
+        "closed":"geschlossen"
       },
       "subscribe":{
         "title":"Newsletter abonnieren",
-        "description":"Abonnieren Sie hier, um auf dem Laufenden zu bleiben, was bei Swan IT Works passiert.",
-        "placeholder":"Geben sie ihre E-Mail Adresse ein",
-        "validationInfo":"Bitte geben Sie die richtige E-Mail-Adresse ein.",
+        "description":"Um über Swan IT Works auf dem Laufenden zu bleiben, hier klicken.",
+        "placeholder":"E-Mail-Adresse eingeben",
+        "validationInfo":"Bitte die korrekte E-Mail-Adresse eingeben.",
         "button":"Abonnieren"
       }
     }
